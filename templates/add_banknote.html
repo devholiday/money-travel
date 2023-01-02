@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %}Banknote{% endblock %}
+{% block content %}
+  <h1>Add Banknote</h1>
+  <form method="post">
+    <div>
+      <label>ISO code</label>
+      <input type=text name="ISO_code" />
+    </div>
+    <div>
+      <label>Symbol</label>
+      <input type=text name="symbol" />
+    </div>
+    <div>
+      <label>currency</label>
+      <input type=text name="currency" />
+    </div>
+    <div>
+      <label>Number</label>
+      <input type=text name="number" />
+    </div>
+    <div>
+      <label>City</label>
+      <input type=text name="city" />
+    </div>
+    <div>
+      <label>Address</label>
+      <input type=text name="address" />
+    </div>
+    <div>
+      <label>Text</label>
+      <input type=text name="text" />
+    </div>
+    <div>
+      <input type="submit" value="Добавить">
+    </div>
+  </form>
+{% endblock %}
