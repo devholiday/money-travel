@@ -5,20 +5,23 @@
   <form method="post">
     <div>
       <label>ISO code</label>
-      <input type=text name="ISO_code" />
-    </div>
-    <div>
-      <label>Symbol</label>
-      <input type=text name="symbol" />
-    </div>
-    <div>
-      <label>currency</label>
-      <input type=text name="currency" />
+      <select name="ISO_code">
+        {% for currency in currencies %}
+          <option value="{{currency.code}}"{% if currency.code == "RUB" %} selected{% endif %}>{{currency.name.en}}</option>
+        {% endfor %}
+      </select>
     </div>
     <div>
       <label>Number</label>
       <input type=text name="number" />
+    </div>    
+    <div>
+      <label>Denomination</label>
+      <input type=text name="denomination" />
     </div>
+
+    <div><hr /></div>
+    
     <div>
       <label>City</label>
       <input type=text name="city" />

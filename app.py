@@ -1,6 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import mysql.connector
 import os
+import json
 
 app = Flask(__name__)
 
@@ -13,6 +14,10 @@ config = {
 }
 
 link = mysql.connector.connect(**config)
+
+f = open('./data/currencies.json', encoding="utf8")
+currencies = json.load(f)
+f.close()
 
 if link.is_connected():
     cursor = link.cursor()
@@ -29,12 +34,17 @@ def search():
     return render_template('search.html')
 
 @app.route("/b/<id>")
-def detailBankNote(id):
+def detail_banknote(id):
     return render_template('banknote.html', id=id)
 
-@app.route("/add")
-def AddDetailBankNote():
-    return render_template('add_banknote.html')
+@app.get("/add")
+def add_banknote_get():
+    return render_template('add_banknote.html', currencies=currencies)
+
+@app.post("/add")
+def add_banknote_post():
+    print(request.form)
+    return render_template('add_banknote.html', currencies=currencies)
 
 @app.errorhandler(404)
 def page_not_found(error):

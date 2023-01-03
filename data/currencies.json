@@ -1,0 +1,2575 @@
+[{
+  "name": {
+    "en": "Australian dollars (AUD)",
+    "de": "Australische Dollar (AUD)",
+    "fr": "dollar australien (AUD)",
+    "ru": "Австралийский доллар (AUD)"
+  },
+  "code": "AUD",
+  "enabled": true,
+  "sort": 50,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} AUD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} AUD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "British pounds (GBP)",
+    "de": "Britische Pfund (GBP)",
+    "fr": "livre sterling (GBP)",
+    "ru": "Фунт стерлингов (GBP)"
+  },
+  "code": "GBP",
+  "enabled": true,
+  "sort": 30,
+  "moneyFormat": "£{{amount}}",
+  "moneyInEmailsFormat": "£{{amount}}",
+  "moneyWithCurrencyFormat": "£{{amount}} GBP",
+  "moneyWithCurrencyInEmailsFormat": "£{{amount}} GBP",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "£",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Algerian dinars (DZD)",
+    "de": "Algerische Dinar (DZD)",
+    "fr": "dinar algérien (DZD)",
+    "ru": "Алжирский динар (DZD)"
+  },
+  "code": "DZD",
+  "enabled": true,
+  "sort": 80,
+  "moneyFormat": "DA {{amount}}",
+  "moneyInEmailsFormat": "DA {{amount}}",
+  "moneyWithCurrencyFormat": "DA {{amount}} DZD",
+  "moneyWithCurrencyInEmailsFormat": "DA {{amount}} DZD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "د.ج",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Barbadian dollars (BBD)",
+    "de": "Barbados-Dollar (BBD)",
+    "fr": "dollar barbadien (BBD)",
+    "ru": "Барбадосский доллар (BBD)"
+  },
+  "code": "BBD",
+  "enabled": true,
+  "sort": 160,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} Bds",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} Bds",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Aruban florin (AWG)",
+    "de": "Aruba-Florin (AWG)",
+    "fr": "florin arubais (AWG)",
+    "ru": "Арубанский гульден (AWG)"
+  },
+  "code": "AWG",
+  "enabled": true,
+  "sort": 120,
+  "moneyFormat": "Afl{{amount}}",
+  "moneyInEmailsFormat": "Afl{{amount}}",
+  "moneyWithCurrencyFormat": "Afl{{amount}} AWG",
+  "moneyWithCurrencyInEmailsFormat": "Afl{{amount}} AWG",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "ƒ",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Bangladeshi takas (BDT)",
+    "de": "Bangladesch-Taka (BDT)",
+    "fr": "taka bangladeshi (BDT)",
+    "ru": "Бангладешская така (BDT)"
+  },
+  "code": "BDT",
+  "enabled": true,
+  "sort": 150,
+  "moneyFormat": "Tk {{amount}}",
+  "moneyInEmailsFormat": "Tk {{amount}}",
+  "moneyWithCurrencyFormat": "Tk {{amount}} BDT",
+  "moneyWithCurrencyInEmailsFormat": "Tk {{amount}} BDT",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "৳",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Angolan kwanzas (AOA)",
+    "de": "Angolanische Kwanza (AOA)",
+    "fr": "kwanza angolais (AOA)",
+    "ru": "Ангольская кванза (AOA)"
+  },
+  "code": "AOA",
+  "enabled": true,
+  "sort": 90,
+  "moneyFormat": "Kz{{amount}}",
+  "moneyInEmailsFormat": "Kz{{amount}}",
+  "moneyWithCurrencyFormat": "Kz{{amount}} AOA",
+  "moneyWithCurrencyInEmailsFormat": "Kz{{amount}} AOA",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Kz",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Azerbaijani manats (AZN)",
+    "de": "Aserbaidschan-Manat (AZN)",
+    "fr": "manat azéri (AZN)",
+    "ru": "Азербайджанский манат (AZN)"
+  },
+  "code": "AZN",
+  "enabled": true,
+  "sort": 60,
+  "moneyFormat": "₼{{amount}}",
+  "moneyInEmailsFormat": "₼{{amount}}",
+  "moneyWithCurrencyFormat": "₼{{amount}} AZN",
+  "moneyWithCurrencyInEmailsFormat": "₼{{amount}} AZN",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₼",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Armenian drams (AMD)",
+    "de": "Armenische Dram (AMD)",
+    "fr": "dram arménien (AMD)",
+    "ru": "Армянский драм (AMD)"
+  },
+  "code": "AMD",
+  "enabled": true,
+  "sort": 110,
+  "moneyFormat": "{{amount}} AMD",
+  "moneyInEmailsFormat": "{{amount}} AMD",
+  "moneyWithCurrencyFormat": "{{amount}} AMD",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} AMD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "դր.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Bahamian dollars (BSD)",
+    "de": "Bahamas-Dollar (BSD)",
+    "fr": "dollar bahaméen (BSD)",
+    "ru": "Багамский доллар (BSD)"
+  },
+  "code": "BSD",
+  "enabled": true,
+  "sort": 140,
+  "moneyFormat": "BS${{amount}}",
+  "moneyInEmailsFormat": "BS${{amount}}",
+  "moneyWithCurrencyFormat": "BS${{amount}} BSD",
+  "moneyWithCurrencyInEmailsFormat": "BS${{amount}} BSD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Bahraini dinars (BHD)",
+    "de": "Bahrain-Dinar (BHD)",
+    "fr": "dinar bahreïni (BHD)",
+    "ru": "Бахрейнский динар (BHD)"
+  },
+  "code": "BHD",
+  "enabled": true,
+  "sort": 170,
+  "moneyFormat": "{{amount}}0 BD",
+  "moneyInEmailsFormat": "{{amount}}0 BD",
+  "moneyWithCurrencyFormat": "{{amount}}0 BHD",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}0 BHD",
+  "decimalMark": ".",
+  "subunitToUnit": 1000,
+  "symbol": "ب.د",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Argentine pesos (ARS)",
+    "de": "Argentinische Pesos (ARS)",
+    "fr": "peso argentin (ARS)",
+    "ru": "Аргентинское песо (ARS)"
+  },
+  "code": "ARS",
+  "enabled": true,
+  "sort": 100,
+  "moneyFormat": "${{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "${{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "${{amount_with_comma_separator}} ARS",
+  "moneyWithCurrencyInEmailsFormat": "${{amount_with_comma_separator}} ARS",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Canadian dollars (CAD)",
+    "de": "Kanadische Dollar (CAD)",
+    "fr": "dollar canadien (CAD)",
+    "ru": "Канадский доллар (CAD)"
+  },
+  "code": "CAD",
+  "enabled": true,
+  "sort": 630,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} CAD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} CAD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Afghan afghanis (AFN)",
+    "de": "Afghanische Afghani (AFN)",
+    "fr": "afghani afghan (AFN)",
+    "ru": "Афганский афгани (AFN)"
+  },
+  "code": "AFN",
+  "enabled": true,
+  "sort": 130,
+  "moneyFormat": "{{amount}}؋",
+  "moneyInEmailsFormat": "{{amount}}؋",
+  "moneyWithCurrencyFormat": "{{amount}}؋ AFN",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}؋ AFN",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "؋",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Bhutanese ngultrums (BTN)",
+    "de": "Bhutan-Ngultrum (BTN)",
+    "fr": "ngultrum bouthanais (BTN)",
+    "ru": "Бутанский нгултрум (BTN)"
+  },
+  "code": "BTN",
+  "enabled": true,
+  "sort": 270,
+  "moneyFormat": "Nu {{amount}}",
+  "moneyInEmailsFormat": "Nu {{amount}}",
+  "moneyWithCurrencyFormat": "Nu {{amount}} BTN",
+  "moneyWithCurrencyInEmailsFormat": "Nu {{amount}} BTN",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Nu.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Albanian lekë (ALL)",
+    "de": "Albanische Lek (ALL)",
+    "fr": "lek albanais (ALL)",
+    "ru": "Албанский лек (ALL)"
+  },
+  "code": "ALL",
+  "enabled": true,
+  "sort": 70,
+  "moneyFormat": "Lek {{amount}}",
+  "moneyInEmailsFormat": "Lek {{amount}}",
+  "moneyWithCurrencyFormat": "Lek {{amount}} ALL",
+  "moneyWithCurrencyInEmailsFormat": "Lek {{amount}} ALL",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "L",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Bolivian bolivianos (BOB)",
+    "de": "Bolivianische Bolivianos (BOB)",
+    "fr": "boliviano bolivien (BOB)",
+    "ru": "Боливийский боливиано (BOB)"
+  },
+  "code": "BOB",
+  "enabled": true,
+  "sort": 220,
+  "moneyFormat": "Bs{{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "Bs{{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "Bs{{amount_with_comma_separator}} BOB",
+  "moneyWithCurrencyInEmailsFormat": "Bs{{amount_with_comma_separator}} BOB",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Bs.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Brazilian reals (BRL)",
+    "de": "Brasilianische Real (BRL)",
+    "fr": "réal brésilien (BRL)",
+    "ru": "Бразильский реал (BRL)"
+  },
+  "code": "BRL",
+  "enabled": true,
+  "sort": 240,
+  "moneyFormat": "R$ {{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "R$ {{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "R$ {{amount_with_comma_separator}} BRL",
+  "moneyWithCurrencyInEmailsFormat": "R$ {{amount_with_comma_separator}} BRL",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "R$",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Brunei dollars (BND)",
+    "de": "Brunei-Dollar (BND)",
+    "fr": "dollar brunéien (BND)",
+    "ru": "Брунейский доллар (BND)"
+  },
+  "code": "BND",
+  "enabled": true,
+  "sort": 250,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} BND",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} BND",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Bulgarian leva (BGN)",
+    "de": "Bulgarische Lew (BGN)",
+    "fr": "lev bulgare (BGN)",
+    "ru": "Болгарский лев (BGN)"
+  },
+  "code": "BGN",
+  "enabled": true,
+  "sort": 210,
+  "moneyFormat": "{{amount}} лв",
+  "moneyInEmailsFormat": "{{amount}} лв",
+  "moneyWithCurrencyFormat": "{{amount}} лв BGN",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} лв BGN",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "лв.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Belarusian roubles (BYN)",
+    "de": "Weißrussische Rubel (BYN)",
+    "fr": "rouble biélorusse (BYN)",
+    "ru": "Белорусский рубль (BYN)"
+  },
+  "code": "BYN",
+  "enabled": true,
+  "sort": 190,
+  "moneyFormat": "Br {{amount}}",
+  "moneyInEmailsFormat": "Br {{amount}}",
+  "moneyWithCurrencyFormat": "Br {{amount}} BYN",
+  "moneyWithCurrencyInEmailsFormat": "Br {{amount}} BYN",
+  "decimalMark": ",",
+  "subunitToUnit": 1,
+  "symbol": "Br",
+  "thousandsSeparator": " "
+},{
+  "name": {
+    "en": "Cambodian riels (KHR)",
+    "de": "Kambodschanische Riel (KHR)",
+    "fr": "riel cambodgien (KHR)",
+    "ru": "Камбоджийский риель (KHR)"
+  },
+  "code": "KHR",
+  "enabled": true,
+  "sort": 620,
+  "moneyFormat": "KHR{{amount}}",
+  "moneyInEmailsFormat": "KHR{{amount}}",
+  "moneyWithCurrencyFormat": "KHR{{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "KHR{{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "៛",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Cayman Islands dollars (KYD)",
+    "de": "Kaiman-Dollar (KYD)",
+    "fr": "dollar des îles Caïmans (KYD)",
+    "ru": "Доллар Каймановых островов (KYD)"
+  },
+  "code": "KYD",
+  "enabled": true,
+  "sort": 440,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} KYD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} KYD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Cape Verdean escudos (CVE)",
+    "de": "Cabo-Verde-Escudos (CVE)",
+    "fr": "escudo capverdien (CVE)",
+    "ru": "Эскудо Кабо-Верде (CVE)"
+  },
+  "code": "CVE",
+  "enabled": true,
+  "sort": 1350,
+  "moneyFormat": "{{amount_with_space_separator}}$",
+  "moneyInEmailsFormat": "{{amount_with_space_separator}}$",
+  "moneyWithCurrencyFormat": "{{amount_with_space_separator}}$ CVE",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_space_separator}}$ CVE",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Myanmar kyats (MMK)",
+    "de": "Myanmarische Kyat (MMK)",
+    "fr": "kyat myanmarais (MMK)",
+    "ru": "Мьянманский кьят (MMK)"
+  },
+  "code": "MMK",
+  "enabled": true,
+  "sort": 900,
+  "moneyFormat": "K{{amount}}",
+  "moneyInEmailsFormat": "K{{amount}}",
+  "moneyWithCurrencyFormat": "K{{amount}} MMK",
+  "moneyWithCurrencyInEmailsFormat": "K{{amount}} MMK",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "K",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Chilean pesos (CLP)",
+    "de": "Chilenische Pesos (CLP)",
+    "fr": "peso chilien (CLP)",
+    "ru": "Чилийское песо (CLP)"
+  },
+  "code": "CLP",
+  "enabled": true,
+  "sort": 1310,
+  "moneyFormat": "${{amount_no_decimals}}",
+  "moneyInEmailsFormat": "${{amount_no_decimals}}",
+  "moneyWithCurrencyFormat": "${{amount_no_decimals}} CLP",
+  "moneyWithCurrencyInEmailsFormat": "${{amount_no_decimals}} CLP",
+  "decimalMark": ",",
+  "subunitToUnit": 1,
+  "symbol": "$",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Central African CFA francs (XAF)",
+    "de": "CFA-Franc (BEAC) (XAF)",
+    "fr": "franc CFA (BEAC) (XAF)",
+    "ru": "Центральноафриканский франк КФА (XAF)"
+  },
+  "code": "XAF",
+  "enabled": true,
+  "sort": 1290,
+  "moneyFormat": "FCFA{{amount}}",
+  "moneyInEmailsFormat": "FCFA{{amount}}",
+  "moneyWithCurrencyFormat": "FCFA{{amount}} XAF",
+  "moneyWithCurrencyInEmailsFormat": "FCFA{{amount}} XAF",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "Fr",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Congolese francs (CDF)",
+    "de": "Kongo-Francs (CDF)",
+    "fr": "franc congolais (CDF)",
+    "ru": "Конголезский франк (CDF)"
+  },
+  "code": "CDF",
+  "enabled": true,
+  "sort": 710,
+  "moneyFormat": "FC{{amount}}",
+  "moneyInEmailsFormat": "FC{{amount}}",
+  "moneyWithCurrencyFormat": "FC{{amount}} CDF",
+  "moneyWithCurrencyInEmailsFormat": "FC{{amount}} CDF",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Fr",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Chinese yuan (CNY)",
+    "de": "Renminbi Yuan (CNY)",
+    "fr": "yuan renminbi chinois (CNY)",
+    "ru": "Китайский юань (CNY)"
+  },
+  "code": "CNY",
+  "enabled": true,
+  "sort": 680,
+  "moneyFormat": "¥{{amount}}",
+  "moneyInEmailsFormat": "¥{{amount}}",
+  "moneyWithCurrencyFormat": "¥{{amount}} CNY",
+  "moneyWithCurrencyInEmailsFormat": "¥{{amount}} CNY",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "¥",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Colombian pesos (COP)",
+    "de": "Kolumbianische Pesos (COP)",
+    "fr": "peso colombien (COP)",
+    "ru": "Колумбийское песо (COP)"
+  },
+  "code": "COP",
+  "enabled": true,
+  "sort": 690,
+  "moneyFormat": "${{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "${{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "${{amount_with_comma_separator}} COP",
+  "moneyWithCurrencyInEmailsFormat": "${{amount_with_comma_separator}} COP",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Costa Rican colóns (CRC)",
+    "de": "Costa-Rica-Colón (CRC)",
+    "fr": "colón costaricain (CRC)",
+    "ru": "Костариканский колон (CRC)"
+  },
+  "code": "CRC",
+  "enabled": true,
+  "sort": 720,
+  "moneyFormat": "₡ {{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "₡ {{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "₡ {{amount_with_comma_separator}} CRC",
+  "moneyWithCurrencyInEmailsFormat": "₡ {{amount_with_comma_separator}} CRC",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "₡",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Comorian francs (KMF)",
+    "de": "Komoren-Francs (KMF)",
+    "fr": "franc comorien (KMF)",
+    "ru": "Франк Комор (KMF)"
+  },
+  "code": "KMF",
+  "enabled": true,
+  "sort": 1250,
+  "moneyFormat": "{{amount_with_comma_separator}} CF",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} CF",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} CF",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} CF",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "Fr",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Czech korunas (CZK)",
+    "de": "Tschechische Kronen (CZK)",
+    "fr": "couronne tchèque (CZK)",
+    "ru": "Чешская крона (CZK)"
+  },
+  "code": "CZK",
+  "enabled": true,
+  "sort": 1300,
+  "moneyFormat": "{{amount_with_comma_separator}} Kč",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} Kč",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} Kč",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} Kč",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "Kč",
+  "thousandsSeparator": " "
+},{
+  "name": {
+    "en": "Bosnia-Herzegovina convertible marks (BAM)",
+    "de": "Konvertible Mark Bosnien und Herzegowina (BAM)",
+    "fr": "mark convertible bosniaque (BAM)",
+    "ru": "Конвертируемая марка Боснии и Герцеговины (BAM)"
+  },
+  "code": "BAM",
+  "enabled": true,
+  "sort": 700,
+  "moneyFormat": "KM {{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "KM {{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "KM {{amount_with_comma_separator}} BAM",
+  "moneyWithCurrencyInEmailsFormat": "KM {{amount_with_comma_separator}} BAM",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "KM",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Croatian kunas (HRK)",
+    "de": "Kroatische Kuna (HRK)",
+    "fr": "kuna croate (HRK)",
+    "ru": "Хорватская куна (HRK)"
+  },
+  "code": "HRK",
+  "enabled": true,
+  "sort": 1280,
+  "moneyFormat": "{{amount_with_comma_separator}} kn",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} kn",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} kn HRK",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} kn HRK",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "kn",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Dominican pesos (DOP)",
+    "de": "Dominikanische Pesos (DOP)",
+    "fr": "peso dominicain (DOP)",
+    "ru": "Доминиканское песо (DOP)"
+  },
+  "code": "DOP",
+  "enabled": true,
+  "sort": 490,
+  "moneyFormat": "RD$ {{amount}}",
+  "moneyInEmailsFormat": "RD$ {{amount}}",
+  "moneyWithCurrencyFormat": "RD$ {{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "RD$ {{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Danish kroner (DKK)",
+    "de": "Dänische Kronen (DKK)",
+    "fr": "couronne danoise (DKK)",
+    "ru": "Датская крона (DKK)"
+  },
+  "code": "DKK",
+  "enabled": true,
+  "sort": 410,
+  "moneyFormat": "{{amount_with_comma_separator}} kr",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} kr",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} DKK",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} DKK",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "kr.",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Bermudian dollars (BMD)",
+    "de": "Bermuda-Dollar (BMD)",
+    "fr": "dollar bermudien (BMD)",
+    "ru": "Бермудский доллар (BMD)"
+  },
+  "code": "BMD",
+  "enabled": true,
+  "sort": 200,
+  "moneyFormat": "BD${{amount}}",
+  "moneyInEmailsFormat": "BD${{amount}}",
+  "moneyWithCurrencyFormat": "BD${{amount}} BMD",
+  "moneyWithCurrencyInEmailsFormat": "BD${{amount}} BMD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "euros (EUR)",
+    "de": "Euro (EUR)",
+    "fr": "euro (EUR)",
+    "ru": "Евро (EUR)"
+  },
+  "code": "EUR",
+  "enabled": true,
+  "sort": 20,
+  "moneyFormat": "€{{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "€{{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "€{{amount_with_comma_separator}} EUR",
+  "moneyWithCurrencyInEmailsFormat": "€{{amount_with_comma_separator}} EUR",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "€",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Gambian dalasis (GMD)",
+    "de": "Gambia-Dalasi (GMD)",
+    "fr": "dalasi gambien (GMD)",
+    "ru": "Гамбийский даласи (GMD)"
+  },
+  "code": "GMD",
+  "enabled": true,
+  "sort": 350,
+  "moneyFormat": "D {{amount}}",
+  "moneyInEmailsFormat": "D {{amount}}",
+  "moneyWithCurrencyFormat": "D {{amount}} GMD",
+  "moneyWithCurrencyInEmailsFormat": "D {{amount}} GMD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "D",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Ghanaian cedis (GHS)",
+    "de": "Ghanaische Cedi (GHS)",
+    "fr": "cédi ghanéen (GHS)",
+    "ru": "Ганский седи (GHS)"
+  },
+  "code": "GHS",
+  "enabled": true,
+  "sort": 360,
+  "moneyFormat": "GH₵{{amount}}",
+  "moneyInEmailsFormat": "GH₵{{amount}}",
+  "moneyWithCurrencyFormat": "GH₵{{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "GH₵{{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₵",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Ethiopian birr (ETB)",
+    "de": "Äthiopische Birr (ETB)",
+    "fr": "birr éthiopien (ETB)",
+    "ru": "Эфиопский быр (ETB)"
+  },
+  "code": "ETB",
+  "enabled": true,
+  "sort": 1360,
+  "moneyFormat": "Br{{amount}}",
+  "moneyInEmailsFormat": "Br{{amount}}",
+  "moneyWithCurrencyFormat": "Br{{amount}} ETB",
+  "moneyWithCurrencyInEmailsFormat": "Br{{amount}} ETB",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Br",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Belize dollars (BZD)",
+    "de": "Belize-Dollar (BZD)",
+    "fr": "dollar bélizéen (BZD)",
+    "ru": "Белизский доллар (BZD)"
+  },
+  "code": "BZD",
+  "enabled": true,
+  "sort": 180,
+  "moneyFormat": "BZ${{amount}}",
+  "moneyInEmailsFormat": "BZ${{amount}}",
+  "moneyWithCurrencyFormat": "BZ${{amount}} BZD",
+  "moneyWithCurrencyInEmailsFormat": "BZ${{amount}} BZD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "CFP francs (XPF)",
+    "de": "CFP-Franc (XPF)",
+    "fr": "franc CFP (XPF)",
+    "ru": "Франк КФП (XPF)"
+  },
+  "code": "XPF",
+  "enabled": true,
+  "sort": 1260,
+  "moneyFormat": "{{amount_no_decimals_with_space_separator}} XPF",
+  "moneyInEmailsFormat": "{{amount_no_decimals_with_space_separator}} XPF",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals_with_space_separator}} XPF",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals_with_space_separator}} XPF",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "Fr",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Guyanaese dollars (GYD)",
+    "de": "Guyana-Dollar (GYD)",
+    "fr": "dollar du Guyana (GYD)",
+    "ru": "Гайанский доллар (GYD)"
+  },
+  "code": "GYD",
+  "enabled": true,
+  "sort": 340,
+  "moneyFormat": "G${{amount}}",
+  "moneyInEmailsFormat": "G${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} GYD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} GYD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Fijian dollars (FJD)",
+    "de": "Fidschi-Dollar (FJD)",
+    "fr": "dollar fidjien (FJD)",
+    "ru": "Доллар Фиджи (FJD)"
+  },
+  "code": "FJD",
+  "enabled": true,
+  "sort": 480,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "FJ${{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "FJ${{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Haitian gourdes (HTG)",
+    "de": "Haitianische Gourdes (HTG)",
+    "fr": "gourde haïtienne (HTG)",
+    "ru": "Гаитянский гурд (HTG)"
+  },
+  "code": "HTG",
+  "enabled": true,
+  "sort": 330,
+  "moneyFormat": "G {{amount}}",
+  "moneyInEmailsFormat": "G {{amount}}",
+  "moneyWithCurrencyFormat": "{{amount}} HTG",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} HTG",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "G",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Guatemalan quetzals (GTQ)",
+    "de": "Guatemaltekische Quetzales (GTQ)",
+    "fr": "quetzal guatémaltèque (GTQ)",
+    "ru": "Гватемальский кетцаль (GTQ)"
+  },
+  "code": "GTQ",
+  "enabled": true,
+  "sort": 370,
+  "moneyFormat": "Q{{amount}}",
+  "moneyInEmailsFormat": "Q{{amount}}",
+  "moneyWithCurrencyFormat": "{{amount}} GTQ",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} GTQ",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Q",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Georgian laris (GEL)",
+    "de": "Georgische Lari (GEL)",
+    "fr": "lari géorgien (GEL)",
+    "ru": "Грузинский лари (GEL)"
+  },
+  "code": "GEL",
+  "enabled": true,
+  "sort": 400,
+  "moneyFormat": "{{amount}} GEL",
+  "moneyInEmailsFormat": "{{amount}} GEL",
+  "moneyWithCurrencyFormat": "{{amount}} GEL",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} GEL",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "ლ",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Honduran lempiras (HNL)",
+    "de": "Honduras-Lempira (HNL)",
+    "fr": "lempira hondurien (HNL)",
+    "ru": "Гондурасская лемпира (HNL)"
+  },
+  "code": "HNL",
+  "enabled": true,
+  "sort": 380,
+  "moneyFormat": "L {{amount}}",
+  "moneyInEmailsFormat": "L {{amount}}",
+  "moneyWithCurrencyFormat": "L {{amount}} HNL",
+  "moneyWithCurrencyInEmailsFormat": "L {{amount}} HNL",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "L",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Burundian francs (BIF)",
+    "de": "Burundi-Francs (BIF)",
+    "fr": "franc burundais (BIF)",
+    "ru": "Бурундийский франк (BIF)"
+  },
+  "code": "BIF",
+  "enabled": true,
+  "sort": 260,
+  "moneyFormat": "FBu. {{amount}}",
+  "moneyInEmailsFormat": "FBu. {{amount}}",
+  "moneyWithCurrencyFormat": "FBu. {{amount}} BIF",
+  "moneyWithCurrencyInEmailsFormat": "FBu. {{amount}} BIF",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "Fr",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "East Caribbean dollars (XCD)",
+    "de": "Ostkaribische Dollar (XCD)",
+    "fr": "dollar des Caraïbes orientales (XCD)",
+    "ru": "Восточно-карибский доллар (XCD)"
+  },
+  "code": "XCD",
+  "enabled": true,
+  "sort": 310,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "EC${{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "EC${{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Indian rupees (INR)",
+    "de": "Indische Rupien (INR)",
+    "fr": "roupie indienne (INR)",
+    "ru": "Индийская рупия (INR)"
+  },
+  "code": "INR",
+  "enabled": true,
+  "sort": 550,
+  "moneyFormat": "Rs. {{amount}}",
+  "moneyInEmailsFormat": "Rs. {{amount}}",
+  "moneyWithCurrencyFormat": "Rs. {{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "Rs. {{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₹",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Botswanan pulas (BWP)",
+    "de": "Botswanische Pula (BWP)",
+    "fr": "pula botswanais (BWP)",
+    "ru": "Ботсванская пула (BWP)"
+  },
+  "code": "BWP",
+  "enabled": true,
+  "sort": 230,
+  "moneyFormat": "P{{amount}}",
+  "moneyInEmailsFormat": "P{{amount}}",
+  "moneyWithCurrencyFormat": "P{{amount}} BWP",
+  "moneyWithCurrencyInEmailsFormat": "P{{amount}} BWP",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "P",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Hong Kong dollars (HKD)",
+    "de": "Hongkong-Dollar (HKD)",
+    "fr": "dollar de Hong Kong (HKD)",
+    "ru": "Гонконгский доллар (HKD)"
+  },
+  "code": "HKD",
+  "enabled": true,
+  "sort": 390,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "HK${{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "HK${{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Iraqi dinars (IQD)",
+    "de": "Irakische Dinar (IQD)",
+    "fr": "dinar irakien (IQD)",
+    "ru": "Иракский динар (IQD)"
+  },
+  "code": "IQD",
+  "enabled": true,
+  "sort": 580,
+  "moneyFormat": "{{amount}}0 IQD",
+  "moneyInEmailsFormat": "{{amount}}0 IQD",
+  "moneyWithCurrencyFormat": "{{amount}}0 IQD",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}0 IQD",
+  "decimalMark": ".",
+  "subunitToUnit": 1000,
+  "symbol": "ع.د",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Icelandic krónur (ISK)",
+    "de": "Isländische Kronen (ISK)",
+    "fr": "couronne islandaise (ISK)",
+    "ru": "Исландская крона (ISK)"
+  },
+  "code": "ISK",
+  "enabled": true,
+  "sort": 590,
+  "moneyFormat": "{{amount_no_decimals}} kr",
+  "moneyInEmailsFormat": "{{amount_no_decimals}} kr",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals}} ISK",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals}} ISK",
+  "decimalMark": ",",
+  "subunitToUnit": 1,
+  "symbol": "kr",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Hungarian forints (HUF)",
+    "de": "Ungarische Forint (HUF)",
+    "fr": "forint hongrois (HUF)",
+    "ru": "Венгерский форинт (HUF)"
+  },
+  "code": "HUF",
+  "enabled": true,
+  "sort": 290,
+  "moneyFormat": "{{amount_no_decimals_with_comma_separator}}",
+  "moneyInEmailsFormat": "{{amount_no_decimals_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals_with_comma_separator}} Ft",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals_with_comma_separator}} Ft",
+  "decimalMark": ",",
+  "subunitToUnit": 1,
+  "symbol": "Ft",
+  "thousandsSeparator": " "
+},{
+  "name": {
+    "en": "Japanese yen (JPY)",
+    "de": "Japanische Yen (JPY)",
+    "fr": "yen japonais (JPY)",
+    "ru": "Японская йена (JPY)"
+  },
+  "code": "JPY",
+  "enabled": true,
+  "sort": 1410,
+  "moneyFormat": "¥{{amount_no_decimals}}",
+  "moneyInEmailsFormat": "¥{{amount_no_decimals}}",
+  "moneyWithCurrencyFormat": "¥{{amount_no_decimals}} JPY",
+  "moneyWithCurrencyInEmailsFormat": "¥{{amount_no_decimals}} JPY",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "¥",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Israeli new shekels (ILS)",
+    "de": "Israelische Neue Schekel (ILS)",
+    "fr": "nouveau shekel israélien (ILS)",
+    "ru": "Израильский шекель (ILS)"
+  },
+  "code": "ILS",
+  "enabled": true,
+  "sort": 540,
+  "moneyFormat": "{{amount}} NIS",
+  "moneyInEmailsFormat": "{{amount}} NIS",
+  "moneyWithCurrencyFormat": "{{amount}} NIS",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} NIS",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₪",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Jamaican dollars (JMD)",
+    "de": "Jamaika-Dollar (JMD)",
+    "fr": "dollar jamaïcain (JMD)",
+    "ru": "Ямайский доллар (JMD)"
+  },
+  "code": "JMD",
+  "enabled": true,
+  "sort": 1400,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} JMD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} JMD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "JEP (JEP)",
+    "de": "JEP (JEP)",
+    "fr": "JEP (JEP)",
+    "ru": "Джерси фунт (JEP)"
+  },
+  "code": "JEP",
+  "enabled": true,
+  "sort": 420,
+  "moneyFormat": "£{{amount}}",
+  "moneyInEmailsFormat": "£{{amount}}",
+  "moneyWithCurrencyFormat": "£{{amount}} JEP",
+  "moneyWithCurrencyInEmailsFormat": "£{{amount}} JEP",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "£",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Kuwaiti dinars (KWD)",
+    "de": "Kuwait-Dinar (KWD)",
+    "fr": "dinar koweïtien (KWD)",
+    "ru": "Кувейтский динар (KWD)"
+  },
+  "code": "KWD",
+  "enabled": true,
+  "sort": 730,
+  "moneyFormat": "{{amount}}0 KD",
+  "moneyInEmailsFormat": "{{amount}}0 KD",
+  "moneyWithCurrencyFormat": "{{amount}}0 KWD",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}0 KWD",
+  "decimalMark": ".",
+  "subunitToUnit": 1000,
+  "symbol": "د.ك",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Kenyan shillings (KES)",
+    "de": "Kenia-Schilling (KES)",
+    "fr": "shilling kényan (KES)",
+    "ru": "Кенийский шиллинг (KES)"
+  },
+  "code": "KES",
+  "enabled": true,
+  "sort": 650,
+  "moneyFormat": "KSh{{amount}}",
+  "moneyInEmailsFormat": "KSh{{amount}}",
+  "moneyWithCurrencyFormat": "KSh{{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "KSh{{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "KSh",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Egyptian pounds (EGP)",
+    "de": "Ägyptische Pfund (EGP)",
+    "fr": "livre égyptienne (EGP)",
+    "ru": "Египетский фунт (EGP)"
+  },
+  "code": "EGP",
+  "enabled": true,
+  "sort": 500,
+  "moneyFormat": "LE {{amount}}",
+  "moneyInEmailsFormat": "LE {{amount}}",
+  "moneyWithCurrencyFormat": "LE {{amount}} EGP",
+  "moneyWithCurrencyInEmailsFormat": "LE {{amount}} EGP",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "ج.م",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Jordanian dinars (JOD)",
+    "de": "Jordanische Dinar (JOD)",
+    "fr": "dinar jordanien (JOD)",
+    "ru": "Иорданский динар (JOD)"
+  },
+  "code": "JOD",
+  "enabled": true,
+  "sort": 570,
+  "moneyFormat": "{{amount}}0 JD",
+  "moneyInEmailsFormat": "{{amount}}0 JD",
+  "moneyWithCurrencyFormat": "{{amount}}0 JOD",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}0 JOD",
+  "decimalMark": ".",
+  "subunitToUnit": 1000,
+  "symbol": "د.ا",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Liberian dollars (LRD)",
+    "de": "Liberianische Dollar (LRD)",
+    "fr": "dollar libérien (LRD)",
+    "ru": "Либерийский доллар (LRD)"
+  },
+  "code": "LRD",
+  "enabled": true,
+  "sort": 760,
+  "moneyFormat": "L${{amount}}",
+  "moneyInEmailsFormat": "L${{amount}}",
+  "moneyWithCurrencyFormat": "L${{amount}} LRD",
+  "moneyWithCurrencyInEmailsFormat": "L${{amount}} LRD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Lebanese pounds (LBP)",
+    "de": "Libanesische Pfund (LBP)",
+    "fr": "livre libanaise (LBP)",
+    "ru": "Ливанский фунт (LBP)"
+  },
+  "code": "LBP",
+  "enabled": true,
+  "sort": 770,
+  "moneyFormat": "L£{{amount}}",
+  "moneyInEmailsFormat": "L£{{amount}}",
+  "moneyWithCurrencyFormat": "L£{{amount}} LBP",
+  "moneyWithCurrencyInEmailsFormat": "L£{{amount}} LBP",
+  "decimalMark": "0",
+  "subunitToUnit": 100,
+  "symbol": "ل.ل",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Malagasy ariary (MGA)",
+    "de": "Madagaskar-Ariary (MGA)",
+    "fr": "ariary malgache (MGA)",
+    "ru": "Малагасийский ариари (MGA)"
+  },
+  "code": "MGA",
+  "enabled": true,
+  "sort": 820,
+  "moneyFormat": "Ar {{amount}}",
+  "moneyInEmailsFormat": "Ar {{amount}}",
+  "moneyWithCurrencyFormat": "Ar {{amount}} MGA",
+  "moneyWithCurrencyInEmailsFormat": "Ar {{amount}} MGA",
+  "decimalMark": ".",
+  "subunitToUnit": 5,
+  "symbol": "Ar",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Lesotho maloti (LSL)",
+    "de": "Loti (LSL)",
+    "fr": "loti lesothan (LSL)",
+    "ru": "Лоти Лесото (LSL)"
+  },
+  "code": "LSL",
+  "enabled": true,
+  "sort": 780,
+  "moneyFormat": "M{{amount}}",
+  "moneyInEmailsFormat": "M{{amount}}",
+  "moneyWithCurrencyFormat": "M{{amount}} LSL",
+  "moneyWithCurrencyInEmailsFormat": "M{{amount}} LSL",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "L",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Macedonian denari (MKD)",
+    "de": "Mazedonische Denari (MKD)",
+    "fr": "denar macédonien (MKD)",
+    "ru": "Македонский денар (MKD)"
+  },
+  "code": "MKD",
+  "enabled": true,
+  "sort": 800,
+  "moneyFormat": "ден {{amount}}",
+  "moneyInEmailsFormat": "ден {{amount}}",
+  "moneyWithCurrencyFormat": "ден {{amount}} MKD",
+  "moneyWithCurrencyInEmailsFormat": "ден {{amount}} MKD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "ден",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Macanese patacas (MOP)",
+    "de": "Macao-Pataca (MOP)",
+    "fr": "pataca macanaise (MOP)",
+    "ru": "Патака Макао (MOP)"
+  },
+  "code": "MOP",
+  "enabled": true,
+  "sort": 1040,
+  "moneyFormat": "MOP${{amount}}",
+  "moneyInEmailsFormat": "MOP${{amount}}",
+  "moneyWithCurrencyFormat": "MOP${{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "MOP${{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "P",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Indonesian rupiahs (IDR)",
+    "de": "Indonesische Rupiah (IDR)",
+    "fr": "roupie indonésienne (IDR)",
+    "ru": "Индонезийская рупия (IDR)"
+  },
+  "code": "IDR",
+  "enabled": true,
+  "sort": 560,
+  "moneyFormat": "{{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "Rp {{amount_with_comma_separator}}",
+  "moneyWithCurrencyInEmailsFormat": "Rp {{amount_with_comma_separator}}",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "Rp",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Maldivian rufiyaa (MVR)",
+    "de": "Malediven-Rupien (MVR)",
+    "fr": "rufiyaa maldivienne (MVR)",
+    "ru": "Мальдивская руфия (MVR)"
+  },
+  "code": "MVR",
+  "enabled": true,
+  "sort": 840,
+  "moneyFormat": "Rf{{amount}}",
+  "moneyInEmailsFormat": "Rf{{amount}}",
+  "moneyWithCurrencyFormat": "Rf{{amount}} MRf",
+  "moneyWithCurrencyInEmailsFormat": "Rf{{amount}} MRf",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "MVR",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Mexican pesos (MXN)",
+    "de": "Mexikanische Pesos (MXN)",
+    "fr": "peso mexicain (MXN)",
+    "ru": "Мексиканское песо (MXN)"
+  },
+  "code": "MXN",
+  "enabled": true,
+  "sort": 860,
+  "moneyFormat": "RM{{amount}} MYR",
+  "moneyInEmailsFormat": "RM{{amount}} MYR",
+  "moneyWithCurrencyFormat": "RM{{amount}} MYR",
+  "moneyWithCurrencyInEmailsFormat": "RM{{amount}} MYR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Malawian kwachas (MWK)",
+    "de": "Malawi-Kwacha (MWK)",
+    "fr": "kwacha malawite (MWK)",
+    "ru": "Малавийская квача (MWK)"
+  },
+  "code": "MWK",
+  "enabled": true,
+  "sort": 810,
+  "moneyFormat": "Mk{{amount}}",
+  "moneyInEmailsFormat": "Mk{{amount}}",
+  "moneyWithCurrencyFormat": "Mk{{amount}} MWK",
+  "moneyWithCurrencyInEmailsFormat": "Mk{{amount}} MWK",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "MK",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Malaysian ringgits (MYR)",
+    "de": "Malaysische Ringgit (MYR)",
+    "fr": "ringgit malais (MYR)",
+    "ru": "Малайзийский ринггит (MYR)"
+  },
+  "code": "MYR",
+  "enabled": true,
+  "sort": 830,
+  "moneyFormat": "RM{{amount}} MYR",
+  "moneyInEmailsFormat": "RM{{amount}} MYR",
+  "moneyWithCurrencyFormat": "RM{{amount}} MYR",
+  "moneyWithCurrencyInEmailsFormat": "RM{{amount}} MYR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "RM",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Mauritian rupees (MUR)",
+    "de": "Mauritius-Rupien (MUR)",
+    "fr": "roupie mauricienne (MUR)",
+    "ru": "Маврикийская рупия (MUR)"
+  },
+  "code": "MUR",
+  "enabled": true,
+  "sort": 790,
+  "moneyFormat": "Rs {{amount}}",
+  "moneyInEmailsFormat": "Rs {{amount}}",
+  "moneyWithCurrencyFormat": "Rs {{amount}} MUR",
+  "moneyWithCurrencyInEmailsFormat": "Rs {{amount}} MUR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₨",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Moroccan dirhams (MAD)",
+    "de": "Marokkanische Dirham (MAD)",
+    "fr": "dirham marocain (MAD)",
+    "ru": "Марокканский дирхам (MAD)"
+  },
+  "code": "MAD",
+  "enabled": true,
+  "sort": 850,
+  "moneyFormat": "{{amount}} dh",
+  "moneyInEmailsFormat": "{{amount}} dh",
+  "moneyWithCurrencyFormat": "Dh {{amount}} MAD",
+  "moneyWithCurrencyInEmailsFormat": "Dh {{amount}} MAD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "د.م.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Moldovan lei (MDL)",
+    "de": "Moldau-Leu (MDL)",
+    "fr": "leu moldave (MDL)",
+    "ru": "Молдавский лей (MDL)"
+  },
+  "code": "MDL",
+  "enabled": true,
+  "sort": 880,
+  "moneyFormat": "{{amount}} MDL",
+  "moneyInEmailsFormat": "{{amount}} MDL",
+  "moneyWithCurrencyFormat": "{{amount}} MDL",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} MDL",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "L",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Kazakhstani tenges (KZT)",
+    "de": "Kasachische Tenge (KZT)",
+    "fr": "tenge kazakh (KZT)",
+    "ru": "Казахстанский тенге (KZT)"
+  },
+  "code": "KZT",
+  "enabled": true,
+  "sort": 41,
+  "moneyFormat": "{{amount}} KZT",
+  "moneyInEmailsFormat": "{{amount}} KZT",
+  "moneyWithCurrencyFormat": "{{amount}} KZT",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} KZT",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "〒",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Mongolian tugriks (MNT)",
+    "de": "Mongolische Tögrög (MNT)",
+    "fr": "tugrik mongol (MNT)",
+    "ru": "Монгольский тугрик (MNT)"
+  },
+  "code": "MNT",
+  "enabled": true,
+  "sort": 890,
+  "moneyFormat": "{{amount_no_decimals}} ₮",
+  "moneyInEmailsFormat": "{{amount_no_decimals}} ₮",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals}} MNT",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals}} MNT",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₮",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Kyrgystani soms (KGS)",
+    "de": "Kirgisische Som (KGS)",
+    "fr": "som kirghize (KGS)",
+    "ru": "Киргизский сом (KGS)"
+  },
+  "code": "KGS",
+  "enabled": true,
+  "sort": 670,
+  "moneyFormat": "лв{{amount}}",
+  "moneyInEmailsFormat": "лв{{amount}}",
+  "moneyWithCurrencyFormat": "лв{{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "лв{{amount}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "som",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "New Zealand dollars (NZD)",
+    "de": "Neuseeland-Dollar (NZD)",
+    "fr": "dollar néo-zélandais (NZD)",
+    "ru": "Новозеландский доллар (NZD)"
+  },
+  "code": "NZD",
+  "enabled": true,
+  "sort": 940,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} NZD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} NZD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Nigerian nairas (NGN)",
+    "de": "Nigerianische Naira (NGN)",
+    "fr": "naira nigérian (NGN)",
+    "ru": "Нигерийская найра (NGN)"
+  },
+  "code": "NGN",
+  "enabled": true,
+  "sort": 920,
+  "moneyFormat": "₦{{amount}}",
+  "moneyInEmailsFormat": "₦{{amount}}",
+  "moneyWithCurrencyFormat": "₦{{amount}} NGN",
+  "moneyWithCurrencyInEmailsFormat": "₦{{amount}} NGN",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₦",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Mozambican meticals (MZN)",
+    "de": "Mosambikanische Meticais (MZN)",
+    "fr": "metical mozambicain (MZN)",
+    "ru": "Мозамбикский метикал (MZN)"
+  },
+  "code": "MZN",
+  "enabled": true,
+  "sort": 870,
+  "moneyFormat": "{{amount}} Mt",
+  "moneyInEmailsFormat": "{{amount}} Mt",
+  "moneyWithCurrencyFormat": "Mt {{amount}} MZN",
+  "moneyWithCurrencyInEmailsFormat": "Mt {{amount}} MZN",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "MTn",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Nicaraguan córdobas (NIO)",
+    "de": "Nicaragua-Córdobas (NIO)",
+    "fr": "córdoba oro nicaraguayen (NIO)",
+    "ru": "Золотая кордоба (NIO)"
+  },
+  "code": "NIO",
+  "enabled": true,
+  "sort": 530,
+  "moneyFormat": "C${{amount}}",
+  "moneyInEmailsFormat": "C${{amount}}",
+  "moneyWithCurrencyFormat": "C${{amount}} NIO",
+  "moneyWithCurrencyInEmailsFormat": "C${{amount}} NIO",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "C$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Netherlands Antillean guilders (ANG)",
+    "de": "Niederländische-Antillen-Gulden (ANG)",
+    "fr": "florin antillais (ANG)",
+    "ru": "Нидерландский антильский гульден (ANG)"
+  },
+  "code": "ANG",
+  "enabled": true,
+  "sort": 930,
+  "moneyFormat": "ƒ;{{amount}}",
+  "moneyInEmailsFormat": "ƒ;{{amount}}",
+  "moneyWithCurrencyFormat": "{{amount}} NAƒ;",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} NAƒ",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "ƒ",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Panamanian balboas (PAB)",
+    "de": "Panamaische Balboas (PAB)",
+    "fr": "balboa panaméen (PAB)",
+    "ru": "Панамский бальбоа (PAB)"
+  },
+  "code": "PAB",
+  "enabled": true,
+  "sort": 1020,
+  "moneyFormat": "B/. {{amount}}",
+  "moneyInEmailsFormat": "B/. {{amount}}",
+  "moneyWithCurrencyFormat": "B/. {{amount}} PAB",
+  "moneyWithCurrencyInEmailsFormat": "B/. {{amount}} PAB",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "B/.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "LVL (LVL)",
+    "de": "LVL (LVL)",
+    "fr": "LVL (LVL)",
+    "ru": "Латвийский лат (LVL)"
+  },
+  "code": "LVL",
+  "enabled": true,
+  "sort": 750,
+  "moneyFormat": "Ls {{amount}}",
+  "moneyInEmailsFormat": "Ls {{amount}}",
+  "moneyWithCurrencyFormat": "Ls {{amount}} LVL",
+  "moneyWithCurrencyInEmailsFormat": "Ls {{amount}} LVL",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Ls",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Papua New Guinean kina (PGK)",
+    "de": "Papua-neuguineischer Kina (PGK)",
+    "fr": "kina papouan-néo-guinéen (PGK)",
+    "ru": "Кина Папуа – Новой Гвинеи (PGK)"
+  },
+  "code": "PGK",
+  "enabled": true,
+  "sort": 660,
+  "moneyFormat": "K {{amount}}",
+  "moneyInEmailsFormat": "K {{amount}}",
+  "moneyWithCurrencyFormat": "K {{amount}} PGK",
+  "moneyWithCurrencyInEmailsFormat": "K {{amount}} PGK",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "K",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Norwegian kroner (NOK)",
+    "de": "Norwegische Kronen (NOK)",
+    "fr": "couronne norvégienne (NOK)",
+    "ru": "Норвежская крона (NOK)"
+  },
+  "code": "NOK",
+  "enabled": true,
+  "sort": 980,
+  "moneyFormat": "{{amount_with_comma_separator}} kr",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} kr",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} NOK",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} NOK",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "kr",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Paraguayan guaranis (PYG)",
+    "de": "Paraguayische Guaraníes (PYG)",
+    "fr": "guaraní paraguayen (PYG)",
+    "ru": "Парагвайский гуарани (PYG)"
+  },
+  "code": "PYG",
+  "enabled": true,
+  "sort": 1030,
+  "moneyFormat": "Gs. {{amount_no_decimals_with_comma_separator}}",
+  "moneyInEmailsFormat": "Gs. {{amount_no_decimals_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "Gs. {{amount_no_decimals_with_comma_separator}} PYG",
+  "moneyWithCurrencyInEmailsFormat": "Gs. {{amount_no_decimals_with_comma_separator}} PYG",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "₲",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Omani rials (OMR)",
+    "de": "Omanische Rials (OMR)",
+    "fr": "riyal omanais (OMR)",
+    "ru": "Оманский риал (OMR)"
+  },
+  "code": "OMR",
+  "enabled": true,
+  "sort": 1000,
+  "moneyFormat": "{{amount_with_comma_separator}}0 OMR",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}}0 OMR",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}}0 OMR",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}}0 OMR",
+  "decimalMark": ".",
+  "subunitToUnit": 1000,
+  "symbol": "ر.ع.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Philippine pesos (PHP)",
+    "de": "Philippinische Pesos (PHP)",
+    "fr": "peso philippin (PHP)",
+    "ru": "Филиппинское песо (PHP)"
+  },
+  "code": "PHP",
+  "enabled": true,
+  "sort": 1240,
+  "moneyFormat": "₱{{amount}}",
+  "moneyInEmailsFormat": "₱{{amount}}",
+  "moneyWithCurrencyFormat": "₱{{amount}} PHP",
+  "moneyWithCurrencyInEmailsFormat": "₱{{amount}} PHP",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₱",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Peruvian soles (PEN)",
+    "de": "Peruanische Sol (PEN)",
+    "fr": "sol péruvien (PEN)",
+    "ru": "Новый соль (PEN)"
+  },
+  "code": "PEN",
+  "enabled": true,
+  "sort": 960,
+  "moneyFormat": "S/. {{amount}}",
+  "moneyInEmailsFormat": "S/. {{amount}}",
+  "moneyWithCurrencyFormat": "S/. {{amount}} PEN",
+  "moneyWithCurrencyInEmailsFormat": "S/. {{amount}} PEN",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "S/.",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Polish zlotys (PLN)",
+    "de": "Polnische Złoty (PLN)",
+    "fr": "zloty polonais (PLN)",
+    "ru": "Польский злотый (PLN)"
+  },
+  "code": "PLN",
+  "enabled": true,
+  "sort": 1050,
+  "moneyFormat": "{{amount_with_comma_separator}} zl",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} zl",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} zl PLN",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} zl PLN",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "zł",
+  "thousandsSeparator": " "
+},{
+  "name": {
+    "en": "Pakistani rupees (PKR)",
+    "de": "Pakistanische Rupien (PKR)",
+    "fr": "roupie pakistanaise (PKR)",
+    "ru": "Пакистанская рупия (PKR)"
+  },
+  "code": "PKR",
+  "enabled": true,
+  "sort": 1010,
+  "moneyFormat": "Rs.{{amount}}",
+  "moneyInEmailsFormat": "Rs.{{amount}}",
+  "moneyWithCurrencyFormat": "Rs.{{amount}} PKR",
+  "moneyWithCurrencyInEmailsFormat": "Rs.{{amount}} PKR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₨",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Namibian dollars (NAD)",
+    "de": "Namibia-Dollar (NAD)",
+    "fr": "dollar namibien (NAD)",
+    "ru": "Доллар Намибии (NAD)"
+  },
+  "code": "NAD",
+  "enabled": true,
+  "sort": 450,
+  "moneyFormat": "N${{amount}}",
+  "moneyInEmailsFormat": "N${{amount}}",
+  "moneyWithCurrencyFormat": "N${{amount}} NAD",
+  "moneyWithCurrencyInEmailsFormat": "N${{amount}} NAD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Laotian kips (LAK)",
+    "de": "Laotische Kip (LAK)",
+    "fr": "kip loatien (LAK)",
+    "ru": "Лаосский кип (LAK)"
+  },
+  "code": "LAK",
+  "enabled": true,
+  "sort": 740,
+  "moneyFormat": "₭{{amount}}",
+  "moneyInEmailsFormat": "₭{{amount}}",
+  "moneyWithCurrencyFormat": "₭{{amount}} LAK",
+  "moneyWithCurrencyInEmailsFormat": "₭{{amount}} LAK",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₭",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Romanian lei (RON)",
+    "de": "Rumänische Leu (RON)",
+    "fr": "leu roumain (RON)",
+    "ru": "Новый румынский лей (RON)"
+  },
+  "code": "RON",
+  "enabled": true,
+  "sort": 950,
+  "moneyFormat": "{{amount_with_comma_separator}} lei",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} lei",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} lei RON",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} lei RON",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "Lei",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Qatari rials (QAR)",
+    "de": "Katar-Riyal (QAR)",
+    "fr": "riyal qatari (QAR)",
+    "ru": "Катарский риал (QAR)"
+  },
+  "code": "QAR",
+  "enabled": true,
+  "sort": 640,
+  "moneyFormat": "QAR {{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "QAR {{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "QAR {{amount_with_comma_separator}}",
+  "moneyWithCurrencyInEmailsFormat": "QAR {{amount_with_comma_separator}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "ر.ق",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Rwandan francs (RWF)",
+    "de": "Ruanda-Francs (RWF)",
+    "fr": "franc rwandais (RWF)",
+    "ru": "Франк Руанды (RWF)"
+  },
+  "code": "RWF",
+  "enabled": true,
+  "sort": 1270,
+  "moneyFormat": "{{amount_no_decimals}} RF",
+  "moneyInEmailsFormat": "{{amount_no_decimals}} RF",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals}} RWF",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals}} RWF",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "FRw",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Russian roubles (RUB)",
+    "de": "Russische Rubel (RUB)",
+    "fr": "rouble russe (RUB)",
+    "ru": "Российский рубль (RUB)"
+  },
+  "code": "RUB",
+  "enabled": true,
+  "sort": 40,
+  "moneyFormat": "{{amount_comma_decimals_with_space_separator}} ₽",
+  "moneyInEmailsFormat": "{{amount_comma_decimals_with_space_separator}} ₽",
+  "moneyWithCurrencyFormat": "{{amount_comma_decimals_with_space_separator}} ₽ RUB",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_comma_decimals_with_space_separator}} ₽ RUB",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "₽",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Nepalese rupees (NPR)",
+    "de": "Nepalesische Rupien (NPR)",
+    "fr": "roupie népalaise (NPR)",
+    "ru": "Непальская рупия (NPR)"
+  },
+  "code": "NPR",
+  "enabled": true,
+  "sort": 910,
+  "moneyFormat": "Rs{{amount}}",
+  "moneyInEmailsFormat": "Rs{{amount}}",
+  "moneyWithCurrencyFormat": "Rs{{amount}} NPR",
+  "moneyWithCurrencyInEmailsFormat": "Rs{{amount}} NPR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₨",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Saudi riyals (SAR)",
+    "de": "Saudi-Rial (SAR)",
+    "fr": "riyal saoudien (SAR)",
+    "ru": "Саудовский риял (SAR)"
+  },
+  "code": "SAR",
+  "enabled": true,
+  "sort": 1070,
+  "moneyFormat": "{{amount}} SR",
+  "moneyInEmailsFormat": "{{amount}} SR",
+  "moneyWithCurrencyFormat": "{{amount}} SAR",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} SAR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "ر.س",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "STD (STD)",
+    "de": "STD (STD)",
+    "fr": "STD (STD)",
+    "ru": "Добра Сан-Томе и Принсипи (STD)"
+  },
+  "code": "STD",
+  "enabled": true,
+  "sort": 430,
+  "moneyFormat": "Db {{amount}}",
+  "moneyInEmailsFormat": "Db {{amount}}",
+  "moneyWithCurrencyFormat": "Db {{amount}} STD",
+  "moneyWithCurrencyInEmailsFormat": "Db {{amount}} STD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Db",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "South African rand (ZAR)",
+    "de": "Südafrikanische Rand (ZAR)",
+    "fr": "rand sud-africain (ZAR)",
+    "ru": "Южноафриканский рэнд (ZAR)"
+  },
+  "code": "ZAR",
+  "enabled": true,
+  "sort": 1370,
+  "moneyFormat": "R {{amount}}",
+  "moneyInEmailsFormat": "R {{amount}}",
+  "moneyWithCurrencyFormat": "R {{amount}} ZAR",
+  "moneyWithCurrencyInEmailsFormat": "R {{amount}} ZAR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "R",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Samoan tala (WST)",
+    "de": "Samoanische Tala (WST)",
+    "fr": "tala samoan (WST)",
+    "ru": "Самоанская тала (WST)"
+  },
+  "code": "WST",
+  "enabled": true,
+  "sort": 1060,
+  "moneyFormat": "WS$ {{amount}}",
+  "moneyInEmailsFormat": "WS$ {{amount}}",
+  "moneyWithCurrencyFormat": "WS$ {{amount}} WST",
+  "moneyWithCurrencyInEmailsFormat": "WS$ {{amount}} WST",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "T",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Singapore dollars (SGD)",
+    "de": "Singapur-Dollar (SGD)",
+    "fr": "dollar de Singapour (SGD)",
+    "ru": "Сингапурский доллар (SGD)"
+  },
+  "code": "SGD",
+  "enabled": true,
+  "sort": 1110,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} SGD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} SGD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Sudanese pounds (SDG)",
+    "de": "Sudanesische Pfund (SDG)",
+    "fr": "livre soudanaise (SDG)",
+    "ru": "Суданский фунт (SDG)"
+  },
+  "code": "SDG",
+  "enabled": true,
+  "sort": 1130,
+  "moneyFormat": "{{amount}} SD",
+  "moneyInEmailsFormat": "{{amount}} SD",
+  "moneyWithCurrencyFormat": "{{amount}} SD",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} SD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "£",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Serbian dinars (RSD)",
+    "de": "Serbische Dinaren (RSD)",
+    "fr": "dinar serbe (RSD)",
+    "ru": "Сербский динар (RSD)"
+  },
+  "code": "RSD",
+  "enabled": true,
+  "sort": 1100,
+  "moneyFormat": "{{amount}} RSD",
+  "moneyInEmailsFormat": "{{amount}} RSD",
+  "moneyWithCurrencyFormat": "{{amount}} RSD",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} RSD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "РСД",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "South Sudanese pounds (SSP)",
+    "de": "Südsudanesische Pfund (SSP)",
+    "fr": "livre sud-soudanaise (SSP)",
+    "ru": "Южносуданский фунт (SSP)"
+  },
+  "code": "SSP",
+  "enabled": true,
+  "sort": 1390,
+  "moneyFormat": "{{amount}} SSP",
+  "moneyInEmailsFormat": "{{amount}} SSP",
+  "moneyWithCurrencyFormat": "{{amount}} SSP",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} SSP",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "£",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Syrian pounds (SYP)",
+    "de": "Syrische Pfund (SYP)",
+    "fr": "livre syrienne (SYP)",
+    "ru": "Сирийский фунт (SYP)"
+  },
+  "code": "SYP",
+  "enabled": true,
+  "sort": 1120,
+  "moneyFormat": "S£{{amount}}",
+  "moneyInEmailsFormat": "S£{{amount}}",
+  "moneyWithCurrencyFormat": "S£{{amount}} SYP",
+  "moneyWithCurrencyInEmailsFormat": "S£{{amount}} SYP",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "£S",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Sri Lankan rupees (LKR)",
+    "de": "Sri-Lanka-Rupien (LKR)",
+    "fr": "roupie srilankaise (LKR)",
+    "ru": "Шри-Ланкийская рупия (LKR)"
+  },
+  "code": "LKR",
+  "enabled": true,
+  "sort": 1340,
+  "moneyFormat": "Rs {{amount}}",
+  "moneyInEmailsFormat": "Rs {{amount}}",
+  "moneyWithCurrencyFormat": "Rs {{amount}} LKR",
+  "moneyWithCurrencyInEmailsFormat": "Rs {{amount}} LKR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₨",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "South Korean won (KRW)",
+    "de": "Südkoreanische Won (KRW)",
+    "fr": "won sud-coréen (KRW)",
+    "ru": "Южнокорейская вона (KRW)"
+  },
+  "code": "KRW",
+  "enabled": true,
+  "sort": 1380,
+  "moneyFormat": "₩{{amount_no_decimals}}",
+  "moneyInEmailsFormat": "₩{{amount_no_decimals}}",
+  "moneyWithCurrencyFormat": "₩{{amount_no_decimals}} KRW",
+  "moneyWithCurrencyInEmailsFormat": "₩{{amount_no_decimals}} KRW",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "₩",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Solomon Islands dollars (SBD)",
+    "de": "Salomonen-Dollar (SBD)",
+    "fr": "dollar des îles Salomon (SBD)",
+    "ru": "Доллар Соломоновых Островов (SBD)"
+  },
+  "code": "SBD",
+  "enabled": true,
+  "sort": 460,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} SBD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} SBD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Tanzanian shillings (TZS)",
+    "de": "Tansania-Schilling (TZS)",
+    "fr": "shilling tanzanien (TZS)",
+    "ru": "Танзанийский шиллинг (TZS)"
+  },
+  "code": "TZS",
+  "enabled": true,
+  "sort": 1160,
+  "moneyFormat": "{{amount}} TZS",
+  "moneyInEmailsFormat": "{{amount}} TZS",
+  "moneyWithCurrencyFormat": "{{amount}} TZS",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} TZS",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "Sh",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Swazi emalangeni (SZL)",
+    "de": "Swasiländische Emalangeni (SZL)",
+    "fr": "lilangeni swazi (SZL)",
+    "ru": "Свазилендский лилангени (SZL)"
+  },
+  "code": "SZL",
+  "enabled": true,
+  "sort": 1080,
+  "moneyFormat": "L {{amount}}",
+  "moneyInEmailsFormat": "L {{amount}}",
+  "moneyWithCurrencyFormat": "L {{amount}} SZL",
+  "moneyWithCurrencyInEmailsFormat": "L {{amount}} SZL",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "E",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Surinamese dollars (SRD)",
+    "de": "Suriname-Dollar (SRD)",
+    "fr": "dollar surinamais (SRD)",
+    "ru": "Суринамский доллар (SRD)"
+  },
+  "code": "SRD",
+  "enabled": true,
+  "sort": 1140,
+  "moneyFormat": "SRD {{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "SRD {{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "SRD {{amount_with_comma_separator}}",
+  "moneyWithCurrencyInEmailsFormat": "SRD {{amount_with_comma_separator}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Swedish kronor (SEK)",
+    "de": "Schwedische Kronen (SEK)",
+    "fr": "couronne suédoise (SEK)",
+    "ru": "Шведская крона (SEK)"
+  },
+  "code": "SEK",
+  "enabled": true,
+  "sort": 1320,
+  "moneyFormat": "{{amount_no_decimals}} kr",
+  "moneyInEmailsFormat": "{{amount_no_decimals}} kr",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals}} SEK",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals}} SEK",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "kr",
+  "thousandsSeparator": " "
+},{
+  "name": {
+    "en": "Swiss francs (CHF)",
+    "de": "Schweizer Franken (CHF)",
+    "fr": "franc suisse (CHF)",
+    "ru": "Швейцарский франк (CHF)"
+  },
+  "code": "CHF",
+  "enabled": true,
+  "sort": 1330,
+  "moneyFormat": "SFr. {{amount}}",
+  "moneyInEmailsFormat": "SFr. {{amount}}",
+  "moneyWithCurrencyFormat": "SFr. {{amount}} CHF",
+  "moneyWithCurrencyInEmailsFormat": "SFr. {{amount}} CHF",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "CHF",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "New Taiwan dollars (TWD)",
+    "de": "Neue Taiwan-Dollar (TWD)",
+    "fr": "nouveau dollar taïwanais (TWD)",
+    "ru": "Новый тайваньский доллар (TWD)"
+  },
+  "code": "TWD",
+  "enabled": true,
+  "sort": 970,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} TWD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} TWD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Turkish Lira (TRY)",
+    "de": "Türkische Lira (TRY)",
+    "fr": "livre turque (TRY)",
+    "ru": "Турецкая лира (TRY)"
+  },
+  "code": "TRY",
+  "enabled": true,
+  "sort": 1180,
+  "moneyFormat": "{{amount}}TL",
+  "moneyInEmailsFormat": "{{amount}}TL",
+  "moneyWithCurrencyFormat": "{{amount}}TL",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}TL",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "₺",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Thai baht (THB)",
+    "de": "Thailändische Baht (THB)",
+    "fr": "baht thaïlandais (THB)",
+    "ru": "Тайский бат (THB)"
+  },
+  "code": "THB",
+  "enabled": true,
+  "sort": 1150,
+  "moneyFormat": "{{amount}} ฿",
+  "moneyInEmailsFormat": "{{amount}} ฿",
+  "moneyWithCurrencyFormat": "{{amount}} ฿ THB",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} ฿ THB",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "฿",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Trinidad & Tobago dollars (TTD)",
+    "de": "Trinidad-und-Tobago-Dollar (TTD)",
+    "fr": "dollar de Trinité-et-Tobago (TTD)",
+    "ru": "Доллар Тринидада и Тобаго (TTD)"
+  },
+  "code": "TTD",
+  "enabled": true,
+  "sort": 470,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} TTD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} TTD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Tunisian dinars (TND)",
+    "de": "Tunesische Dinar (TND)",
+    "fr": "dinar tunisien (TND)",
+    "ru": "Тунисский динар (TND)"
+  },
+  "code": "TND",
+  "enabled": true,
+  "sort": 1170,
+  "moneyFormat": "{{amount}}0",
+  "moneyInEmailsFormat": "{{amount}}0",
+  "moneyWithCurrencyFormat": "{{amount}}0 DT",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}0 DT",
+  "decimalMark": ".",
+  "subunitToUnit": 1000,
+  "symbol": "د.ت",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Seychellois rupees (SCR)",
+    "de": "Seychellen-Rupien (SCR)",
+    "fr": "roupie des Seychelles (SCR)",
+    "ru": "Сейшельская рупия (SCR)"
+  },
+  "code": "SCR",
+  "enabled": true,
+  "sort": 1090,
+  "moneyFormat": "Rs {{amount}}",
+  "moneyInEmailsFormat": "Rs {{amount}}",
+  "moneyWithCurrencyFormat": "Rs {{amount}} SCR",
+  "moneyWithCurrencyInEmailsFormat": "Rs {{amount}} SCR",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₨",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Ugandan shillings (UGX)",
+    "de": "Uganda-Schilling (UGX)",
+    "fr": "shilling ougandais (UGX)",
+    "ru": "Угандийский шиллинг (UGX)"
+  },
+  "code": "UGX",
+  "enabled": true,
+  "sort": 1200,
+  "moneyFormat": "Ush {{amount_no_decimals}}",
+  "moneyInEmailsFormat": "Ush {{amount_no_decimals}}",
+  "moneyWithCurrencyFormat": "Ush {{amount_no_decimals}} UGX",
+  "moneyWithCurrencyInEmailsFormat": "Ush {{amount_no_decimals}} UGX",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "USh",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Turkmenistani manat (TMT)",
+    "de": "Turkmenistan-Manat (TMT)",
+    "fr": "nouveau manat turkmène (TMT)",
+    "ru": "Туркменский манат (TMT)"
+  },
+  "code": "TMT",
+  "enabled": true,
+  "sort": 1190,
+  "moneyFormat": "{{amount}}T",
+  "moneyInEmailsFormat": "{{amount}}T",
+  "moneyWithCurrencyFormat": "{{amount}}T",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}}T",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "T",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Vanuatu vatu (VUV)",
+    "de": "Vanuatu-Vatu (VUV)",
+    "fr": "vatu vanuatuan (VUV)",
+    "ru": "Вануату вату (VUV)"
+  },
+  "code": "VUV",
+  "enabled": true,
+  "sort": 280,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}}VT",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}}VT",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "Vt",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Ukrainian hryvnias (UAH)",
+    "de": "Ukrainische Hrywen (UAH)",
+    "fr": "hryvnia ukrainienne (UAH)",
+    "ru": "Украинская гривна (UAH)"
+  },
+  "code": "UAH",
+  "enabled": true,
+  "sort": 1220,
+  "moneyFormat": "₴{{amount}}",
+  "moneyInEmailsFormat": "₴{{amount}}",
+  "moneyWithCurrencyFormat": "₴{{amount}} UAH",
+  "moneyWithCurrencyInEmailsFormat": "₴{{amount}} UAH",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "₴",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Uzbekistani som (UZS)",
+    "de": "Usbekistan-Sum (UZS)",
+    "fr": "sum ouzbek (UZS)",
+    "ru": "Узбекский сум (UZS)"
+  },
+  "code": "UZS",
+  "enabled": true,
+  "sort": 1210,
+  "moneyFormat": "{{amount_no_decimals_with_space_separator}} som",
+  "moneyInEmailsFormat": "{{amount_no_decimals_with_space_separator}} som",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals_with_space_separator}} UZS",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals_with_space_separator}} UZS",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "West African CFA francs (XOF)",
+    "de": "CFA-Francs (BCEAO) (XOF)",
+    "fr": "franc CFA (BCEAO) (XOF)",
+    "ru": "Западноафриканский франк КФА (XOF)"
+  },
+  "code": "XOF",
+  "enabled": true,
+  "sort": 520,
+  "moneyFormat": "CFA{{amount}}",
+  "moneyInEmailsFormat": "CFA{{amount}}",
+  "moneyWithCurrencyFormat": "CFA{{amount}} XOF",
+  "moneyWithCurrencyInEmailsFormat": "CFA{{amount}} XOF",
+  "decimalMark": ".",
+  "subunitToUnit": 1,
+  "symbol": "Fr",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Uruguayan pesos (UYU)",
+    "de": "Uruguayische Pesos (UYU)",
+    "fr": "peso uruguayen (UYU)",
+    "ru": "Уругвайское песо (UYU)"
+  },
+  "code": "UYU",
+  "enabled": true,
+  "sort": 1230,
+  "moneyFormat": "${{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "${{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "${{amount_with_comma_separator}} UYU",
+  "moneyWithCurrencyInEmailsFormat": "${{amount_with_comma_separator}} UYU",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "VEF (VEF)",
+    "de": "VEF (VEF)",
+    "fr": "VEF (VEF)",
+    "ru": "Венесуэльский боливар (VEF)"
+  },
+  "code": "VEF",
+  "enabled": true,
+  "sort": 300,
+  "moneyFormat": "Bs. {{amount_with_comma_separator}}",
+  "moneyInEmailsFormat": "Bs. {{amount_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "Bs. {{amount_with_comma_separator}} VEF",
+  "moneyWithCurrencyInEmailsFormat": "Bs. {{amount_with_comma_separator}} VEF",
+  "decimalMark": ",",
+  "subunitToUnit": 100,
+  "symbol": "Bs.F.",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Zambian kwachas (ZMW)",
+    "de": "Kwacha (ZMW)",
+    "fr": "kwacha zambien (ZMW)",
+    "ru": "Замбийская квача (ZMW)"
+  },
+  "code": "ZMW",
+  "enabled": true,
+  "sort": 510,
+  "moneyFormat": "K{{amount_no_decimals_with_comma_separator}}",
+  "moneyInEmailsFormat": "K{{amount_no_decimals_with_comma_separator}}",
+  "moneyWithCurrencyFormat": "ZMW{{amount_no_decimals_with_comma_separator}}",
+  "moneyWithCurrencyInEmailsFormat": "ZMW{{amount_no_decimals_with_comma_separator}}",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "ZK",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "UAE dirhams (AED)",
+    "de": "VAE-Dirham (AED)",
+    "fr": "dirham des Émirats arabes unis (AED)",
+    "ru": "ОАЭ Дирхам (AED)"
+  },
+  "code": "AED",
+  "enabled": true,
+  "sort": 990,
+  "moneyFormat": "Dhs. {{amount}}",
+  "moneyInEmailsFormat": "Dhs. {{amount}}",
+  "moneyWithCurrencyFormat": "Dhs. {{amount}} AED",
+  "moneyWithCurrencyInEmailsFormat": "Dhs. {{amount}} AED",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "د.إ",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Vietnamese dong (VND)",
+    "de": "Vietnamesische Dong (VND)",
+    "fr": "dông vietnamien (VND)",
+    "ru": "Вьетнамский донг (VND)"
+  },
+  "code": "VND",
+  "enabled": true,
+  "sort": 320,
+  "moneyFormat": "{{amount_no_decimals_with_comma_separator}}₫",
+  "moneyInEmailsFormat": "{{amount_no_decimals_with_comma_separator}}₫",
+  "moneyWithCurrencyFormat": "{{amount_no_decimals_with_comma_separator}} VND",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_no_decimals_with_comma_separator}} VND",
+  "decimalMark": ",",
+  "subunitToUnit": 1,
+  "symbol": "₫",
+  "thousandsSeparator": "."
+},{
+  "name": {
+    "en": "Yemeni rials (YER)",
+    "de": "Jemen-Rial (YER)",
+    "fr": "riyal yéménite (YER)",
+    "ru": "Йеменский риал (YER)"
+  },
+  "code": "YER",
+  "enabled": true,
+  "sort": 600,
+  "moneyFormat": "{{amount_with_comma_separator}} YER",
+  "moneyInEmailsFormat": "{{amount_with_comma_separator}} YER",
+  "moneyWithCurrencyFormat": "{{amount_with_comma_separator}} YER",
+  "moneyWithCurrencyInEmailsFormat": "{{amount_with_comma_separator}} YER",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "﷼",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "LTL (LTL)",
+    "de": "LTL (LTL)",
+    "fr": "LTL (LTL)",
+    "ru": "Литовский лит (LTL)"
+  },
+  "code": "LTL",
+  "symbol": "Lt",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "thousandsSeparator": ",",
+  "moneyWithCurrencyFormat": "{{amount}} Lt",
+  "moneyFormat": "{{amount}} Lt",
+  "moneyWithCurrencyInEmailsFormat": "{{amount}} Lt",
+  "moneyInEmailsFormat": "{{amount}} Lt",
+  "enabled": true,
+  "sort": 771
+},{
+  "name": {
+    "en": "US dollars (USD)",
+    "de": "US-Dollar (USD)",
+    "fr": "dollar des États-Unis (USD)",
+    "ru": "Доллар США (USD)"
+  },
+  "code": "USD",
+  "enabled": true,
+  "sort": 10,
+  "moneyFormat": "${{amount}}",
+  "moneyInEmailsFormat": "${{amount}}",
+  "moneyWithCurrencyFormat": "${{amount}} USD",
+  "moneyWithCurrencyInEmailsFormat": "${{amount}} USD",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "symbol": "$",
+  "thousandsSeparator": ","
+},{
+  "name": {
+    "en": "Tajikistani somonis (TJS)",
+    "de": "Tadschikistan-Somoni (TJS)",
+    "fr": "somoni tadjik (TJS)",
+    "ru": "Сомони (TJS)"
+  },
+  "code": "TJS",
+  "symbol": "ЅМ",
+  "decimalMark": ".",
+  "subunitToUnit": 100,
+  "thousandsSeparator": ",",
+  "moneyWithCurrencyFormat": "TJS {{amount}}",
+  "moneyFormat": "TJS {{amount}}",
+  "moneyWithCurrencyInEmailsFormat": "TJS {{amount}}",
+  "moneyInEmailsFormat": "TJS {{amount}}",
+  "enabled": true,
+  "sort": 1105
+}]
