@@ -1,9 +1,12 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import mysql.connector
 import os
 import json
+from forms.banknote import BanknoteForm
 
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 config = {
   'user': os.environ.get("DB_USER"),
@@ -37,14 +40,14 @@ def search():
 def detail_banknote(id):
     return render_template('banknote.html', id=id)
 
-@app.get("/add")
-def add_banknote_get():
-    return render_template('add_banknote.html', currencies=currencies)
-
-@app.post("/add")
-def add_banknote_post():
-    print(request.form)
-    return render_template('add_banknote.html', currencies=currencies)
+@app.route("/add", methods=['GET', 'POST'])
+def submit():
+    form = BanknoteForm()
+    form.iso_code.choices = [(g['code'], g['name']['en']) for g in currencies]
+    if form.validate_on_submit():
+        # Add to DB
+        return redirect('/')
+    return render_template('add_banknote.html', form=form)
 
 @app.errorhandler(404)
 def page_not_found(error):

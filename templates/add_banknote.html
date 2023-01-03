@@ -2,40 +2,75 @@
 {% block title %}Banknote{% endblock %}
 {% block content %}
   <h1>Add Banknote</h1>
-  <form method="post">
+  <form method="POST" action="/add">
+    {{ form.csrf_token }}
+
     <div>
-      <label>ISO code</label>
-      <select name="ISO_code">
-        {% for currency in currencies %}
-          <option value="{{currency.code}}"{% if currency.code == "RUB" %} selected{% endif %}>{{currency.name.en}}</option>
-        {% endfor %}
-      </select>
-    </div>
-    <div>
-      <label>Number</label>
-      <input type=text name="number" />
-    </div>    
-    <div>
-      <label>Denomination</label>
-      <input type=text name="denomination" />
+      {{ form.iso_code.label }} {{ form.iso_code }}
     </div>
 
-    <div><hr /></div>
+    <div>
+      {{ form.number.label }} {{ form.number(size=20) }}
+
+      {% if form.number.errors %}
+        <ul class="errors">
+          {% for error in form.number.errors %}
+              <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
     
     <div>
-      <label>City</label>
-      <input type=text name="city" />
+      {{ form.denomination.label }} {{ form.denomination(size=20) }}
+
+      {% if form.denomination.errors %}
+        <ul class="errors">
+          {% for error in form.denomination.errors %}
+              <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
+    
+    <div><hr /></div>
+
     <div>
-      <label>Address</label>
-      <input type=text name="address" />
+      {{ form.city.label }} {{ form.city(size=20) }}
+
+      {% if form.city.errors %}
+        <ul class="errors">
+          {% for error in form.city.errors %}
+              <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
+
     <div>
-      <label>Text</label>
-      <input type=text name="text" />
+      {{ form.address.label }} {{ form.address(size=20) }}
+
+      {% if form.address.errors %}
+        <ul class="errors">
+          {% for error in form.address.errors %}
+              <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
+    
     <div>
-      <input type="submit" value="Добавить">
+      {{ form.text.label }} {{ form.text(size=20) }}
+
+      {% if form.text.errors %}
+        <ul class="errors">
+          {% for error in form.text.errors %}
+              <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
+
+    <input type="submit" value="Add">
   </form>
 {% endblock %}
