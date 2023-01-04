@@ -1,4 +1,10 @@
 {
-    "homepage": "Homepage",
-    "title_add_banknote": "Add Banknote"
+    "title_add_banknote": "Add Banknote",
+    "currency": "Currency",
+    "number": "Number",
+    "denomination": "Denomination",
+    "city": "City",
+    "address": "Address",
+    "text": "Text",
+    "btn_add": "Add"
 }

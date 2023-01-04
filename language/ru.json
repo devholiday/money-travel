@@ -1,4 +1,10 @@
 {
-    "homepage": "Главная страница",
-    "title_add_banknote": "Добавить банкноту"
+    "title_add_banknote": "Добавить банкноту",
+    "currency": "Валюта",
+    "number": "Номер",
+    "denomination": "Номинал",
+    "city": "Город",
+    "address": "Адрес",
+    "text": "Текст",
+    "btn_add": "Добавить"
 }

@@ -5,6 +5,8 @@ import json
 import locale
 from forms.banknote import BanknoteForm
 
+import db
+
 language_dict = []
 languages = {}
 default_lang = locale.getlocale()[0].split('_')[0]
@@ -41,7 +43,7 @@ def search(language):
 def detail_banknote(language, id):
     return render_template('banknote.html', id=id)
 
-@app.route("/add", defaults={'language': default_lang})
+@app.route("/add", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/add", methods=['GET', 'POST'])
 def submit(language):
     f = open('./data/currencies.json', encoding="utf8")
@@ -49,9 +51,20 @@ def submit(language):
     f.close()
 
     form = BanknoteForm()
-    form.iso_code.choices = [(g['code'], g['name']['en']) for g in currencies]
+    form.iso_code.choices = [(g['code'], g['name'][language]) for g in currencies]
+    form.iso_code.label = languages[language]['currency']
+    form.number.label = languages[language]['number']
+    form.denomination.label = languages[language]['denomination']
+    form.city.label = languages[language]['city']
+    form.address.label = languages[language]['address']
+    form.text.label = languages[language]['text']
+    
     if form.validate_on_submit():
-        # Add to DB
+        lastrowid = db.insert_sql("""INSERT INTO banknotes (ISO_code, number, denomination) 
+                           VALUES ('{0}', '{1}', {2}) """.format(form.iso_code.data, form.number.data, form.denomination.data))
+        db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text) 
+                            VALUES ('{0}', '{1}', '{2}', '{3}') """.format(lastrowid, form.city.data, form.address.data, form.text.data))
+
         return redirect('/')
 
     return render_template('add_banknote.html', form=form, **languages[language])
