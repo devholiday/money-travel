@@ -11,7 +11,14 @@
     {% endblock %}
 </head>
 <body>
-    <header>Header</header>
+    <header>
+        Header
+
+        <div>
+            <a href="{{ url_for(request.endpoint, language='en') }}">en</a>&nbsp;
+            <a href="{{ url_for(request.endpoint, language='ru') }}">ru</a>
+        </div>
+    </header>
     <div>{% block content %}{% endblock %}</div>
     <footer>
         {% block footer %}

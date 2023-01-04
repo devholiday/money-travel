@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block title %}Banknote{% endblock %}
 {% block content %}
-  <h1>Add Banknote</h1>
+  <h1>{{title_add_banknote}}</h1>
   <form method="POST" action="/add">
     {{ form.csrf_token }}
 
