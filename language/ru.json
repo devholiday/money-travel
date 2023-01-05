@@ -9,5 +9,7 @@
     "btn_add": "Добавить",
     "title_comments": "Комментарии",
     "title_info": "Информация",
-    "title_banknote": "Банкнота"
+    "title_banknote": "Банкнота",
+    "btn_add_banknote": "Добавить банкноту",
+    "btn_search": "Найти"
 }

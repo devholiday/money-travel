@@ -6,7 +6,6 @@ import locale
 from forms.banknote import BanknoteForm
 from forms.comment import CommentForm
 from forms.search import SearchForm
-
 import db
 
 language_dict = []
@@ -33,7 +32,7 @@ def before_request():
 
         if request.url_rule and '<language>' in request.url_rule.rule:
             if len(ar_path) > 1 and (ar_path[1] not in language_dict):
-                return redirect(url_for(request.endpoint, language=default_lang), 301)
+                abort(404)
     except:
         abort(404)
 
@@ -48,11 +47,6 @@ def index(language):
         records = db.fetchall_sql("select * from banknotes ORDER BY id DESC")
 
     return render_template('index.html', form=form, **languages[language], banknotes=records, language=language)
-
-@app.route("/search", defaults={'language': default_lang}, methods=['GET', 'POST'])
-@app.route("/<language>/search", methods=['GET', 'POST'])
-def search(language):
-    return render_template('search.html', **languages[language])
 
 @app.route("/b/<id>", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/b/<id>", methods=['GET', 'POST'])
@@ -74,7 +68,7 @@ def detail_banknote(language, id):
 
 @app.route("/add", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/add", methods=['GET', 'POST'])
-def submit(language):
+def add_banknote(language):
     form = BanknoteForm()
     form.iso_code.choices = [(g['code'], g['name'][language]) for g in currencies]
     form.iso_code.label = languages[language]['currency']

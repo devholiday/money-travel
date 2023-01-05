@@ -2,7 +2,7 @@
 {% block title %}Banknote{% endblock %}
 {% block content %}
   <h1>{{title_add_banknote}}</h1>
-  <form method="POST" action="/add">
+  <form method="POST">
     {{ form.csrf_token }}
 
     <div>

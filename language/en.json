@@ -9,5 +9,7 @@
     "btn_add": "Add",
     "title_comments": "Comments",
     "title_info": "Info",
-    "title_banknote": "Banknote"
+    "title_banknote": "Banknote",
+    "btn_add_banknote": "Add banknote",
+    "btn_search": "Search"
 }

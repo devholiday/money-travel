@@ -1,7 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}HomePage{% endblock %}
 {% block content %}
-  <idiv>
+  <div>
+    <div>
+      <a href="{{ url_for('add_banknote', language=request.view_args.language) }}">{{btn_add_banknote}}</a>
+    </div>
+
     <div>
       <form method="POST">
         {{ form.csrf_token }}
@@ -22,7 +26,7 @@
           {{ form.filter.label }} {{ form.filter }}
         </div>
     
-        <input type="submit" value="Search">
+        <input type="submit" value="{{btn_search}}">
       </form>
     </div>
     
@@ -38,5 +42,5 @@
         </div>
       {% endfor %}
     </div>
-  </idiv>
+  </div>
 {% endblock %}
