@@ -11,6 +11,48 @@
   <div>
     <h3>Comments</h3>
 
+    <form method="POST">
+      {{ form.csrf_token }}
+  
+      <div>
+        {{ form.city.label }} {{ form.city(size=20) }}
+  
+        {% if form.city.errors %}
+          <ul class="errors">
+            {% for error in form.city.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+  
+      <div>
+        {{ form.address.label }} {{ form.address(size=20) }}
+  
+        {% if form.address.errors %}
+          <ul class="errors">
+            {% for error in form.address.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      
+      <div>
+        {{ form.text.label }} {{ form.text(size=20) }}
+  
+        {% if form.text.errors %}
+          <ul class="errors">
+            {% for error in form.text.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+  
+      <input type="submit" value="{{btn_add}}">
+    </form>
+
     {% for comment in comments %}
       <div>
         City {{comment[0]}} - 

@@ -4,6 +4,7 @@ import glob
 import json
 import locale
 from forms.banknote import BanknoteForm
+from forms.comment import CommentForm
 
 import db
 
@@ -45,12 +46,23 @@ def index(language):
 def search(language):
     return render_template('search.html')
 
-@app.route("/b/<id>", defaults={'language': default_lang})
-@app.route("/<language>/b/<id>")
+@app.route("/b/<id>", defaults={'language': default_lang}, methods=['GET', 'POST'])
+@app.route("/<language>/b/<id>", methods=['GET', 'POST'])
 def detail_banknote(language, id):
     record = db.fetchone_sql("select * from banknotes where id="+id)
     comments = db.fetchall_sql("select * from comments where banknote_id="+str(record[0]))
-    return render_template('banknote.html', **languages[language], banknote=record, comments=comments)
+
+    form = CommentForm()
+    form.city.label = languages[language]['city']
+    form.address.label = languages[language]['address']
+    form.text.label = languages[language]['text']
+
+    if form.validate_on_submit():
+        db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text) 
+                            VALUES ('{0}', '{1}', '{2}', '{3}') """.format(id, form.city.data, form.address.data, form.text.data))
+        return redirect('/')
+
+    return render_template('banknote.html', form=form,  **languages[language], banknote=record, comments=comments)
 
 @app.route("/add", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/add", methods=['GET', 'POST'])
