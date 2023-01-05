@@ -3,8 +3,31 @@
 {% block content %}
   <idiv>
     <div>
-      search
+      <form method="POST">
+        {{ form.csrf_token }}
+
+        <div>
+          {{ form.q.label }} {{ form.q(size=20) }}
+    
+          {% if form.q.errors %}
+            <ul class="errors">
+              {% for error in form.q.errors %}
+                  <li>{{ error }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+    
+        <div>
+          {{ form.filter.label }} {{ form.filter }}
+        </div>
+    
+        <input type="submit" value="Search">
+      </form>
     </div>
+    
+    <hr />
+
     <div>
       {% for banknote in banknotes %}
         <div>

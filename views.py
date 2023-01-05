@@ -5,6 +5,7 @@ import json
 import locale
 from forms.banknote import BanknoteForm
 from forms.comment import CommentForm
+from forms.search import SearchForm
 
 import db
 
@@ -36,21 +37,28 @@ def before_request():
     except:
         abort(404)
 
-@app.route("/", defaults={'language': default_lang})
-@app.route("/<language>")
-def index(language):
-    records = db.fetchall_sql("select * from banknotes")
-    return render_template('index.html', **languages[language], banknotes=records, language=language)
+@app.route("/", defaults={'language': default_lang}, methods=['GET', 'POST'])
+@app.route("/<language>", methods=['GET', 'POST'])
+def index(language):    
+    form = SearchForm()
+    form.filter.choices = [('number', languages[language]['number']), ('denomination', languages[language]['denomination']), ('ISO_code', languages[language]['currency'])]
+    if form.validate_on_submit():
+        records = db.fetchall_sql("select * from banknotes where " + form.filter.data + " LIKE '" + form.q.data+"%' ORDER BY id DESC")
+    else:
+        records = db.fetchall_sql("select * from banknotes ORDER BY id DESC")
 
-@app.route("/<language>/search")
+    return render_template('index.html', form=form, **languages[language], banknotes=records, language=language)
+
+@app.route("/search", defaults={'language': default_lang}, methods=['GET', 'POST'])
+@app.route("/<language>/search", methods=['GET', 'POST'])
 def search(language):
-    return render_template('search.html')
+    return render_template('search.html', **languages[language])
 
 @app.route("/b/<id>", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/b/<id>", methods=['GET', 'POST'])
 def detail_banknote(language, id):
     record = db.fetchone_sql("select * from banknotes where id="+id)
-    comments = db.fetchall_sql("select * from comments where banknote_id="+str(record[0]))
+    comments = db.fetchall_sql("select * from comments where banknote_id="+str(record[0])+" ORDER BY id DESC")
 
     form = CommentForm()
     form.city.label = languages[language]['city']

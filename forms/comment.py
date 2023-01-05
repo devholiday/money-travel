@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, TextAreaField, SelectField
-from wtforms.validators import DataRequired, Length, NumberRange
+from wtforms import StringField, TextAreaField
+from wtforms.validators import DataRequired, Length
 
 class CommentForm(FlaskForm):
     city = StringField('City', validators=[DataRequired(), Length(min=1, max=50)])
