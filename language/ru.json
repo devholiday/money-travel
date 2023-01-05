@@ -6,5 +6,8 @@
     "city": "Город",
     "address": "Адрес",
     "text": "Текст",
-    "btn_add": "Добавить"
+    "btn_add": "Добавить",
+    "title_comments": "Комментарии",
+    "title_info": "Информация",
+    "title_banknote": "Банкнота"
 }

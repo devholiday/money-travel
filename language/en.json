@@ -6,5 +6,8 @@
     "city": "City",
     "address": "Address",
     "text": "Text",
-    "btn_add": "Add"
+    "btn_add": "Add",
+    "title_comments": "Comments",
+    "title_info": "Info",
+    "title_banknote": "Banknote"
 }
