@@ -14,9 +14,16 @@
     <header>
         Header
 
+        <a href="{{ url_for('index', language=request.view_args.language) }}">Logo</a>
+
         <div>
-            <a href="{{ url_for(request.endpoint, language='en') }}">en</a>&nbsp;
-            <a href="{{ url_for(request.endpoint, language='ru') }}">ru</a>
+            {% set args = ({}) %}
+            {% if request.view_args.id is defined %}
+                {% set temp = args.update({'id': request.view_args.id}) %}
+            {% endif %}
+            
+            <a href="{{ url_for(request.endpoint, language='en', **args) }}">en</a>&nbsp;
+            <a href="{{ url_for(request.endpoint, language='ru', **args) }}">ru</a>&nbsp;
         </div>
     </header>
     <div>{% block content %}{% endblock %}</div>

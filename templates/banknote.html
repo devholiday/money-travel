@@ -1,5 +1,24 @@
 {% extends "layout.html" %}
 {% block title %}Banknote{% endblock %}
 {% block content %}
-  <h1>Banknote {{id}}</h1>
+  <h1>Banknote #id {{banknote[0]}}</h1>
+  <div>
+    <h3>Info</h3>
+    Currency {{banknote[1]}} - 
+    Number {{banknote[2]}} - 
+    Denomination {{banknote[3]}}
+  </div>
+  <div>
+    <h3>Comments</h3>
+
+    {% for comment in comments %}
+      <div>
+        City {{comment[0]}} - 
+        Address {{comment[1]}} - 
+        Text {{comment[2]}} 
+      </div>
+      {% else %}
+        <p>Empty</p>
+    {% endfor %}
+  </div>
 {% endblock %}

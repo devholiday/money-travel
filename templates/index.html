@@ -6,7 +6,14 @@
       search
     </div>
     <div>
-      list of banknotes
+      {% for banknote in banknotes %}
+        <div>
+          id {{banknote[0]}} - 
+          ISO code {{banknote[1]}} - 
+          number <a href="{{ url_for('detail_banknote', language=language, id=banknote[0]) }}">{{banknote[2]}}</a> - 
+          denomination {{banknote[3]}}
+        </div>
+      {% endfor %}
     </div>
   </idiv>
 {% endblock %}

@@ -18,13 +18,18 @@ for lang in language_list:
     with open(lang, encoding='utf8') as file:
         languages[lang_code] = json.load(file)
 
+
+f = open('./data/currencies.json', encoding="utf8")
+currencies = json.load(f)
+f.close()
+
 @app.before_request
 def before_request():
     try:
         path = request.full_path.rstrip('/ ?')
         ar_path = path.split('/')
 
-        if '<language>' in request.url_rule.rule:
+        if request.url_rule and '<language>' in request.url_rule.rule:
             if len(ar_path) > 1 and (ar_path[1] not in language_dict):
                 return redirect(url_for(request.endpoint, language=default_lang), 301)
     except:
@@ -33,23 +38,23 @@ def before_request():
 @app.route("/", defaults={'language': default_lang})
 @app.route("/<language>")
 def index(language):
-    return render_template('index.html', **languages[language])
+    records = db.fetchall_sql("select * from banknotes")
+    return render_template('index.html', **languages[language], banknotes=records, language=language)
 
 @app.route("/<language>/search")
 def search(language):
     return render_template('search.html')
 
+@app.route("/b/<id>", defaults={'language': default_lang})
 @app.route("/<language>/b/<id>")
 def detail_banknote(language, id):
-    return render_template('banknote.html', id=id)
+    record = db.fetchone_sql("select * from banknotes where id="+id)
+    comments = db.fetchall_sql("select * from comments where banknote_id="+str(record[0]))
+    return render_template('banknote.html', **languages[language], banknote=record, comments=comments)
 
 @app.route("/add", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/add", methods=['GET', 'POST'])
 def submit(language):
-    f = open('./data/currencies.json', encoding="utf8")
-    currencies = json.load(f)
-    f.close()
-
     form = BanknoteForm()
     form.iso_code.choices = [(g['code'], g['name'][language]) for g in currencies]
     form.iso_code.label = languages[language]['currency']
@@ -64,7 +69,6 @@ def submit(language):
                            VALUES ('{0}', '{1}', {2}) """.format(form.iso_code.data, form.number.data, form.denomination.data))
         db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text) 
                             VALUES ('{0}', '{1}', '{2}', '{3}') """.format(lastrowid, form.city.data, form.address.data, form.text.data))
-
         return redirect('/')
 
     return render_template('add_banknote.html', form=form, **languages[language])
