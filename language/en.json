@@ -11,5 +11,7 @@
     "title_info": "Info",
     "title_banknote": "Banknote",
     "btn_add_banknote": "Add banknote",
-    "btn_search": "Search"
+    "btn_search": "Search",
+    "title_search": "Search",
+    "empty_q": "No results found for «[q]»"
 }

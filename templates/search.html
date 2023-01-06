@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block title %}HomePage{% endblock %}
+{% block content %}
+  <div>
+    <div>
+      <a href="{{ url_for('add_banknote', language=request.view_args.language) }}">{{btn_add_banknote}}</a>
+    </div>
+
+    <div>
+      <form method="GET" action="{{ url_for('search', language=request.view_args.language) }}">
+        <div>
+          {{ form.q.label }} {{ form.q(size=20) }}
+    
+          {% if form.q.errors %}
+            <ul class="errors">
+              {% for error in form.q.errors %}
+                  <li>{{ error }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+    
+        <div>
+          {{ form.filter.label }} {{ form.filter }}
+        </div>
+    
+        <input type="submit" value="{{btn_search}}">
+      </form>
+    </div>
+    
+    <hr />
+
+    <div>
+      <h3>{{title_search}}</h3>
+      {% for banknote in banknotes %}
+        <div>
+          id {{banknote[0]}} - 
+          ISO code {{banknote[1]}} - 
+          number <a href="{{ url_for('detail_banknote', language=language, id=banknote[0]) }}">{{banknote[2]}}</a> - 
+          denomination {{banknote[3]}}
+        </div>
+      {% else %}
+        <p>{{empty_q|replace("[q]", q)}}</p>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

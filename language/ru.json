@@ -11,5 +11,7 @@
     "title_info": "Информация",
     "title_banknote": "Банкнота",
     "btn_add_banknote": "Добавить банкноту",
-    "btn_search": "Найти"
+    "btn_search": "Найти",
+    "title_search": "Поиск",
+    "empty_q": "По запросу «[q]» ничего не найдено"
 }

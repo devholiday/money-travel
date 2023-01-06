@@ -7,9 +7,7 @@
     </div>
 
     <div>
-      <form method="POST">
-        {{ form.csrf_token }}
-
+      <form method="GET" action="{{ url_for('search', language=request.view_args.language) }}">
         <div>
           {{ form.q.label }} {{ form.q(size=20) }}
     
@@ -33,13 +31,44 @@
     <hr />
 
     <div>
-      {% for banknote in banknotes %}
-        <div>
-          id {{banknote[0]}} - 
-          ISO code {{banknote[1]}} - 
-          number <a href="{{ url_for('detail_banknote', language=language, id=banknote[0]) }}">{{banknote[2]}}</a> - 
-          denomination {{banknote[3]}}
-        </div>
+      <h3>TOP 25</h3>
+      <ul>
+        <li><a href="{{url_for('index', language=request.view_args.language, type='banknotes')}}">Banknotes</a></li>
+        <li><a href="{{url_for('index', language=request.view_args.language, type='comments')}}">Comments</a></li>
+      </ul>
+      <div>
+        <p>Sort:</p>
+        <ul>
+          <li>
+            <a href="{{ url_for('index', language=request.view_args.language, created_at='desc', type=type) }}">The newest</a> / 
+            <a href="{{ url_for('index', language=request.view_args.language, created_at='asc', type=type) }}">The oldest</a>
+          </li>
+          {% if type != 'comments' %}
+            <li>
+              <a href="{{ url_for('index', language=request.view_args.language, updated_at='desc') }}">updated at (desc)</a> / 
+              <a href="{{ url_for('index', language=request.view_args.language, updated_at='asc') }}">updated at (asc)</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+      {% for record in top_list %}
+        {% if type == None or type == 'banknotes' %}
+          <div>
+            id {{record[0]}} - 
+            ISO code {{record[1]}} - 
+            number <a href="{{ url_for('detail_banknote', language=language, id=record[0]) }}">{{record[2]}}</a> - 
+            denomination {{record[3]}}
+          </div>
+        {%endif%}
+        {% if type == 'comments' %}
+          <div>
+            id {{record[0]}} - 
+            city {{record[2]}} - 
+            <a href="{{ url_for('detail_banknote', language=language, id=record[1]) }}">banknote</a> - 
+            address {{record[3]}}
+            text {{record[4]}}
+          </div>
+        {%endif%}
       {% endfor %}
     </div>
   </div>
