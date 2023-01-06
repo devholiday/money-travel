@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}Banknote{% endblock %}
+{% block content %}
+  <div>
+    <h3>{{ title_comments }}</h3>
+    {% for comment in comments %}
+      <div>
+        ID {{comment[0]}} -
+        City {{comment[1]}} - 
+        Address {{comment[2]}} - 
+        Text {{comment[3]}} 
+        <a href="{{ url_for('detail_banknote', language=language, id=comment[1]) }}">banknote</a> - 
+
+        {% set enabled = 0 %}
+        {% set btnToggleComment = 'Off' %}
+        {% if comment[5] == 0 %}
+          {% set enabled = 1 %}
+          {% set btnToggleComment = 'On' %}
+        {%endif%}
+
+        <form method="POST">
+          <input type="hidden" value="{{comment[0]}}" name="id" />
+          <input type="hidden" value="{{enabled}}" name="enabled" />
+          <input type="submit" value="{{btnToggleComment}}">
+        </form>
+      </div>
+      {% else %}
+        <p>Empty</p>
+    {% endfor %}
+  </div>
+{% endblock %}

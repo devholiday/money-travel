@@ -13,5 +13,10 @@
     "btn_add_banknote": "Add banknote",
     "btn_search": "Search",
     "title_search": "Search",
-    "empty_q": "No results found for «[q]»"
+    "empty_q": "No results found for «[q]»",
+    "username": "Username",
+    "password": "Password",
+    "btn_login": "Login",
+    "title_login": "Sign in",
+    "logout": "Logout"
 }
