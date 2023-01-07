@@ -4,6 +4,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 import glob
 import json
 import locale
+from forms.banknote0 import Banknote0Form
 from forms.banknote import BanknoteForm
 from forms.comment import CommentForm
 from forms.search import SearchForm
@@ -111,21 +112,40 @@ def detail_banknote(language, id):
 @app.route("/add", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/add", methods=['GET', 'POST'])
 def add_banknote(language):
-    form = BanknoteForm()
-    form.iso_code.choices = [(g['code'], g['name'][language]) for g in currencies]
-    form.iso_code.label = languages[language]['currency']
-    form.number.label = languages[language]['number']
-    form.denomination.label = languages[language]['denomination']
-    form.city.label = languages[language]['city']
-    form.address.label = languages[language]['address']
-    form.text.label = languages[language]['text']
+    args = request.args.to_dict()
+    step = args.get('step')
+    banknote_id = args.get('banknote_id')
+    
+    if step is None or step == '1':
+        form = Banknote0Form()
+        form.iso_code.choices = [(g['code'], g['name'][language]) for g in currencies]
+        form.iso_code.label = languages[language]['currency']
+        form.number.label = languages[language]['number']
+    elif step == '2':
+        form = BanknoteForm()
+        form.denomination.label = languages[language]['denomination']
+        form.city.label = languages[language]['city']
+        form.address.label = languages[language]['address']
+        form.text.label = languages[language]['text']
     
     if form.validate_on_submit():
-        lastrowid = db.insert_sql("""INSERT INTO banknotes (ISO_code, number, denomination) 
-                           VALUES ('{0}', '{1}', {2}) """.format(form.iso_code.data, form.number.data, form.denomination.data))
-        db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text) 
-                            VALUES ('{0}', '{1}', '{2}', '{3}') """.format(lastrowid, form.city.data, form.address.data, form.text.data))
-        return redirect('/')
+        if step is None or step == '1':
+            banknote = db.fetchone_sql("select * from banknotes where iso_code='"+form.iso_code.data+"' and number='"+form.number.data+"'")
+            if banknote is None:
+                lastrowid = db.insert_sql("""INSERT INTO banknotes (ISO_code, number) 
+                        VALUES ('{0}', '{1}') """.format(form.iso_code.data, form.number.data))
+                return redirect(url_for('add_banknote', language=language, step=2, banknote_id=lastrowid))
+            else:
+                return redirect(url_for('add_banknote', language=language, step=2, banknote_id=banknote[0]))
+
+        if step == '2':
+            if banknote_id is not None:
+                now = datetime.now()
+                formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
+                db.update_sql("""Update banknotes set denomination='{0}', updated_at='{1}' where id={1}""".format(form.denomination.data, formatted_date, banknote_id))
+                db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text) 
+                        VALUES ('{0}', '{1}', '{2}', '{3}') """.format(banknote_id, form.city.data, form.address.data, form.text.data))
+                return redirect('/')
 
     return render_template('add_banknote.html', form=form, **languages[language])
 

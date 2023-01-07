@@ -2,75 +2,90 @@
 {% block title %}Banknote{% endblock %}
 {% block content %}
   <h1>{{title_add_banknote}}</h1>
+
+  {% if request.args['step'] is not defined or request.args['step'] == '1' %}
+    {% set part = 'one'%}
+  {%else%}
+    {%set part = 'two'%}
+  {%endif%}
+  
   <form method="POST">
     {{ form.csrf_token }}
 
-    <div>
-      {{ form.iso_code.label }} {{ form.iso_code }}
-    </div>
+    {% if part == 'one' %}
+      <div>
+        {{ form.iso_code.label }} {{ form.iso_code }}
+      </div>
 
-    <div>
-      {{ form.number.label }} {{ form.number(size=20) }}
+      <div>
+        {{ form.number.label }} {{ form.number(size=20) }}
 
-      {% if form.number.errors %}
-        <ul class="errors">
-          {% for error in form.number.errors %}
-              <li>{{ error }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </div>
+        {% if form.number.errors %}
+          <ul class="errors">
+            {% for error in form.number.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endif %}
+ 
+    {% if part == 'two' %}
+      <div>
+        {{ form.denomination.label }} {{ form.denomination(size=20) }}
+
+        {% if form.denomination.errors %}
+          <ul class="errors">
+            {% for error in form.denomination.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      
+      <div><hr /></div>
+
+      <div>
+        {{ form.city.label }} {{ form.city(size=20) }}
+
+        {% if form.city.errors %}
+          <ul class="errors">
+            {% for error in form.city.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div>
+        {{ form.address.label }} {{ form.address(size=20) }}
+
+        {% if form.address.errors %}
+          <ul class="errors">
+            {% for error in form.address.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      
+      <div>
+        {{ form.text.label }} {{ form.text(size=20) }}
+
+        {% if form.text.errors %}
+          <ul class="errors">
+            {% for error in form.text.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    {% endif %}
     
-    <div>
-      {{ form.denomination.label }} {{ form.denomination(size=20) }}
-
-      {% if form.denomination.errors %}
-        <ul class="errors">
-          {% for error in form.denomination.errors %}
-              <li>{{ error }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </div>
-    
-    <div><hr /></div>
-
-    <div>
-      {{ form.city.label }} {{ form.city(size=20) }}
-
-      {% if form.city.errors %}
-        <ul class="errors">
-          {% for error in form.city.errors %}
-              <li>{{ error }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </div>
-
-    <div>
-      {{ form.address.label }} {{ form.address(size=20) }}
-
-      {% if form.address.errors %}
-        <ul class="errors">
-          {% for error in form.address.errors %}
-              <li>{{ error }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </div>
-    
-    <div>
-      {{ form.text.label }} {{ form.text(size=20) }}
-
-      {% if form.text.errors %}
-        <ul class="errors">
-          {% for error in form.text.errors %}
-              <li>{{ error }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </div>
-
-    <input type="submit" value="{{btn_add}}">
+    {% if part == 'one' %}
+      <input type="submit" value="Continue">
+    {%else%}
+      <input type="submit" value="Add">
+    {%endif%}
   </form>
 {% endblock %}
