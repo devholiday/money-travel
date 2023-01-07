@@ -142,8 +142,8 @@ def add_banknote(language):
             if banknote_id is not None:
                 now = datetime.now()
                 formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
-                db.update_sql("""Update banknotes set denomination='{0}', updated_at='{1}' where id={1}""".format(form.denomination.data, formatted_date, banknote_id))
-                db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text) 
+                db.update_sql("""Update banknotes set denomination='{0}', updated_at='{1}' where id={2}""".format(form.denomination.data, formatted_date, banknote_id))
+                db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text)
                         VALUES ('{0}', '{1}', '{2}', '{3}') """.format(banknote_id, form.city.data, form.address.data, form.text.data))
                 return redirect('/')
 
