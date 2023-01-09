@@ -54,19 +54,19 @@
       {% for record in top_list %}
         {% if type == None or type == 'banknotes' %}
           <div>
-            id {{record[0]}} - 
-            ISO code {{record[1]}} - 
-            number <a href="{{ url_for('detail_banknote', language=language, id=record[0]) }}">{{record[2]}}</a> - 
-            denomination {{record[3]}}
+            id {{record.id}} - 
+            ISO code {{record.iso_code}} - 
+            number <a href="{{ url_for('detail_banknote', language=language, id=record.id) }}">{{record.number}}</a> - 
+            denomination {{record.denomination}}
           </div>
         {%endif%}
         {% if type == 'comments' %}
           <div>
-            id {{record[0]}} - 
-            city {{record[2]}} - 
-            <a href="{{ url_for('detail_banknote', language=language, id=record[1]) }}">banknote</a> - 
-            address {{record[3]}}
-            text {{record[4]}}
+            id {{record.id}} - 
+            city {{record.city}} - 
+            <a href="{{ url_for('detail_banknote', language=language, id=record.banknote_id) }}">banknote</a> - 
+            address {{record.address}}
+            text {{record.text}}
           </div>
         {%endif%}
       {% endfor %}

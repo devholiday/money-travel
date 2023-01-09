@@ -34,10 +34,10 @@
       <h3>{{title_search}}</h3>
       {% for banknote in banknotes %}
         <div>
-          id {{banknote[0]}} - 
-          ISO code {{banknote[1]}} - 
-          number <a href="{{ url_for('detail_banknote', language=language, id=banknote[0]) }}">{{banknote[2]}}</a> - 
-          denomination {{banknote[3]}}
+          id {{banknote.id}} - 
+          ISO code {{banknote.iso_code}} - 
+          number <a href="{{ url_for('detail_banknote', language=language, id=banknote.id) }}">{{banknote.number}}</a> - 
+          denomination {{banknote.denomination}}
         </div>
       {% else %}
         <p>{{empty_q|replace("[q]", q)}}</p>

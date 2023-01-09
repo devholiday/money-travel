@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}Banknote{% endblock %}
 {% block content %}
-  <h1>{{title_banknote}} {{banknote[2]}}</h1>
+  <h1>{{title_banknote}} {{banknote.number}}</h1>
   <div>
     <h3>{{ title_info }}</h3>
-    {{currency}} {{banknote[1]}} - 
-    {{number}} {{banknote[2]}} - 
-    {{denomination}} {{banknote[3]}}
+    {{currency}} {{banknote.iso_code}} - 
+    {{number}} {{banknote.number}} - 
+    {{denomination}} {{banknote.denomination}}
   </div>
   <div>
     <h3>{{ title_comments }}</h3>
@@ -55,9 +55,9 @@
 
     {% for comment in comments %}
       <div>
-        City {{comment[2]}} - 
-        Address {{comment[3]}} - 
-        Text {{comment[4]}} 
+        City {{comment.city}} - 
+        Address {{comment.address}} - 
+        Text {{comment.text}} 
       </div>
       {% else %}
         <p>Empty</p>

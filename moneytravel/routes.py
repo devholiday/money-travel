@@ -1,21 +1,23 @@
-from app import app
 from flask import render_template, request, redirect, abort, session, url_for, flash, g
-from werkzeug.security import check_password_hash, generate_password_hash
+from moneytravel import app, db
+from werkzeug.security import check_password_hash
 import glob
 import json
 import locale
-from forms.banknote0 import Banknote0Form
-from forms.banknote import BanknoteForm
-from forms.comment import CommentForm
-from forms.search import SearchForm
-from forms.login import LoginForm
-import db
 from datetime import datetime
+
+from moneytravel.forms.banknote0 import Banknote0Form
+from moneytravel.forms.banknote import BanknoteForm
+from moneytravel.forms.comment import CommentForm
+from moneytravel.forms.search import SearchForm
+from moneytravel.forms.login import LoginForm
+
+from moneytravel.models import User, Banknote, Comment
 
 language_dict = []
 languages = {}
 default_lang = locale.getlocale()[0].split('_')[0]
-language_list = glob.glob("language/*.json")
+language_list = glob.glob("moneytravel/language/*.json")
 for lang in language_list:
     filename = lang.split('\\')
     lang_code = filename[1].split('.')[0]
@@ -24,7 +26,7 @@ for lang in language_list:
         languages[lang_code] = json.load(file)
 
 
-f = open('./data/currencies.json', encoding="utf8")
+f = open('./moneytravel/data/currencies.json', encoding="utf8")
 currencies = json.load(f)
 f.close()
 
@@ -42,7 +44,7 @@ def before_request():
         if user_id is None:
             g.user = None
         else:
-            g.user = db.fetchone_sql("select * from users where id='"+str(user_id)+"'")
+            g.user = User.query.get_or_404(user_id)
     except:
         abort(404)
 
@@ -58,19 +60,20 @@ def index(language):
         print('You are not logged in')
 
     form = SearchForm()
-    form.filter.choices = [('number', languages[language]['number']), ('denomination', languages[language]['denomination']), ('ISO_code', languages[language]['currency'])]
+    form.filter.choices = [('number', languages[language]['number']), ('denomination', languages[language]['denomination']), ('iso_code', languages[language]['currency'])]
     
-    order_by = "created_at desc"
-    if args.get('created_at'):
-        order_by = "created_at " + args.get('created_at')
-
     if type == 'comments':
-        top_list = db.fetchall_sql("select * from comments where enabled=1 ORDER BY " + order_by + " LIMIT 25")
+        order_by = Comment.created_at.desc()
+        if args.get('created_at'):
+            order_by = Comment.created_at.desc() if args.get('created_at') == 'desc' else Comment.created_at.asc()
+        top_list = Comment.query.filter_by(enabled=True).order_by(order_by).limit(25).all()
     else:
+        order_by = Banknote.created_at.desc()
+        if args.get('created_at'):
+            order_by = Banknote.created_at.desc() if args.get('created_at') == 'desc' else Banknote.created_at.asc()
         if args.get('updated_at'):
-            order_by = "updated_at " + args.get('updated_at')
-
-        top_list = db.fetchall_sql("select * from banknotes ORDER BY " + order_by + " LIMIT 25")
+            order_by = Banknote.updated_at.desc() if args.get('updated_at') == 'desc' else Banknote.updated_at.asc()
+        top_list = Banknote.query.order_by(order_by).limit(25).all()
 
     return render_template('index.html', form=form, **languages[language], top_list=top_list, language=language, type=type)
 
@@ -79,34 +82,44 @@ def index(language):
 @app.route("/<language>/search", methods=['GET'])
 def search(language):
     args = request.args.to_dict()
-    records = []
+    banknotes = []
     form = SearchForm()
-    form.filter.choices = [('number', languages[language]['number']), ('denomination', languages[language]['denomination']), ('ISO_code', languages[language]['currency'])]
+    form.filter.choices = [('number', languages[language]['number']), ('denomination', languages[language]['denomination']), ('iso_code', languages[language]['currency'])]
     if args.get('filter') and args.get('q'):
-        records = db.fetchall_sql("select * from banknotes where " + args.get('filter') + " LIKE '" + args.get('q') +"%' ORDER BY id DESC LIMIT 50")
-    return render_template('search.html', form=form, **languages[language], banknotes=records, language=language, q=args.get('q'))
+        search = "{}%".format(args.get('q'))
+        filter_by = Banknote.iso_code.like(search)
+        if (args.get('filter') == 'number'):
+            filter_by = Banknote.number.like(search)
+        if (args.get('filter') == 'denomination'):
+            filter_by = Banknote.denomination.like(search)
+        banknotes = Banknote.query.filter(filter_by).order_by(Banknote.id.desc()).limit(50).all()
+
+    return render_template('search.html', form=form, **languages[language], banknotes=banknotes, language=language, q=args.get('q'))
 
 
 @app.route("/b/<id>", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/b/<id>", methods=['GET', 'POST'])
 def detail_banknote(language, id):
-    record = db.fetchone_sql("select * from banknotes where id="+id)
-    comments = db.fetchall_sql("select * from comments where banknote_id="+str(record[0])+" ORDER BY id DESC LIMIT 30")
+    banknote = Banknote.query.get_or_404(id)
+    comments = Comment.query.filter_by(banknote_id=id, enabled=True).order_by(Comment.id.desc()).limit(30).all()
 
     form = CommentForm()
     form.city.label = languages[language]['city']
     form.address.label = languages[language]['address']
     form.text.label = languages[language]['text']
 
-    if form.validate_on_submit():
-        now = datetime.now()
-        formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
-        db.update_sql("""Update banknotes set updated_at='{0}' where id={1}""".format(formatted_date, id))
-        db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text) 
-                            VALUES ('{0}', '{1}', '{2}', '{3}') """.format(id, form.city.data, form.address.data, form.text.data))
+    if form.validate_on_submit():    
+        banknote = Banknote.query.get_or_404(id)
+        banknote.updated_at = datetime.utcnow()
+
+        new_comment = Comment(banknote_id=id, city=form.city.data, address=form.address.data, text=form.text.data)
+        db.session.add(new_comment)
+
+        db.session.commit()
+
         return redirect('/')
 
-    return render_template('banknote.html', form=form,  **languages[language], banknote=record, comments=comments)
+    return render_template('banknote.html', form=form,  **languages[language], banknote=banknote, comments=comments)
 
 
 @app.route("/add", defaults={'language': default_lang}, methods=['GET', 'POST'])
@@ -130,21 +143,26 @@ def add_banknote(language):
     
     if form.validate_on_submit():
         if step is None or step == '1':
-            banknote = db.fetchone_sql("select * from banknotes where iso_code='"+form.iso_code.data+"' and number='"+form.number.data+"'")
+            banknote = Banknote.query.filter_by(iso_code = form.iso_code.data, number = form.number.data).one_or_none()
             if banknote is None:
-                lastrowid = db.insert_sql("""INSERT INTO banknotes (ISO_code, number) 
-                        VALUES ('{0}', '{1}') """.format(form.iso_code.data, form.number.data))
-                return redirect(url_for('add_banknote', language=language, step=2, banknote_id=lastrowid))
+                new_banknote = Banknote(iso_code=form.iso_code.data, number=form.number.data)
+                db.session.add(new_banknote)
+                db.session.commit()
+                return redirect(url_for('add_banknote', language=language, step=2, banknote_id=new_banknote.id))
             else:
-                return redirect(url_for('add_banknote', language=language, step=2, banknote_id=banknote[0]))
+                return redirect(url_for('add_banknote', language=language, step=2, banknote_id=banknote.id))
 
         if step == '2':
             if banknote_id is not None:
-                now = datetime.now()
-                formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
-                db.update_sql("""Update banknotes set denomination='{0}', updated_at='{1}' where id={2}""".format(form.denomination.data, formatted_date, banknote_id))
-                db.insert_sql("""INSERT INTO comments (banknote_id, city, address, text)
-                        VALUES ('{0}', '{1}', '{2}', '{3}') """.format(banknote_id, form.city.data, form.address.data, form.text.data))
+                banknote = Banknote.query.get_or_404(banknote_id)
+                banknote.denomination = form.denomination.data
+                banknote.updated_at = datetime.utcnow()
+                
+                new_comment = Comment(banknote_id=banknote_id, city=form.city.data, address=form.address.data, text=form.text.data)
+                db.session.add(new_comment)
+
+                db.session.commit()
+
                 return redirect('/')
 
     return render_template('add_banknote.html', form=form, **languages[language])
@@ -153,12 +171,16 @@ def add_banknote(language):
 @app.route("/admin/comments", defaults={'language': default_lang}, methods=['GET', 'POST'])
 @app.route("/<language>/admin/comments", methods=['GET', 'POST'])
 def admin_comments(language):
-    comments = db.fetchall_sql("select * from comments ORDER BY id DESC LIMIT 30")
+    comments = Comment.query.order_by(Comment.id.desc()).limit(30).all()
 
     if request.method == 'POST':
         comment_id = request.form['id']
         enabled = request.form['enabled']
-        db.update_sql("""Update comments set enabled='{0}' where id={1}""".format(enabled, comment_id))
+        
+        comment = Comment.query.get_or_404(comment_id)
+        comment.enabled = bool(int(enabled))
+        db.session.commit()
+
         return redirect(url_for('admin_comments'))
 
     return render_template('admin/comments.html', **languages[language], comments=comments)
@@ -173,16 +195,16 @@ def login(language):
     form.username.label = languages[language]['username']
     form.password.label = languages[language]['password']
     if form.validate_on_submit():
-        user = db.fetchone_sql("select * from users where username='"+form.username.data+"'")
+        user = User.query.filter_by(username = form.username.data).one_or_none()
         if user is None:
             error = 'Incorrect username.'
-        elif not check_password_hash(user[2], form.password.data):
+        elif not check_password_hash(user.password, form.password.data):
             error = 'Incorrect password.'
 
         if error is None:
             session.clear()
-            session['user_id'] = user[0]
-            session['username'] = user[1]
+            session['user_id'] = user.id
+            session['username'] = user.username
             return redirect(url_for('index'))
 
     flash(error)
