@@ -12,7 +12,9 @@ from moneytravel.forms.comment import CommentForm
 from moneytravel.forms.search import SearchForm
 from moneytravel.forms.login import LoginForm
 
-from moneytravel.models import User, Banknote, Comment
+from moneytravel.models.banknote import Banknote
+from moneytravel.models.comment import Comment
+from moneytravel.models.user import User
 
 language_dict = []
 languages = {}
